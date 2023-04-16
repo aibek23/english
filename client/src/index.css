@@ -1,0 +1,4067 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.node.css1>.wrapper1 {
+  background-color: white
+}
+
+.node.css1 {
+  color: #333
+}
+
+.node.css1>.padding_top {
+  padding-top: 20px
+}
+
+.node.css1>.padding_bottom {
+  padding-bottom: 20px
+}
+
+.node.css1 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css2 {
+  color: #333;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 5px
+}
+
+.node.css2 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css3 {
+  color: #333;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 9px;
+  padding-right: 0px
+}
+
+.node.css3 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css4 {
+  color: #333;
+  padding-top: 0px;
+  padding-bottom: 13px;
+  padding-left: 5px;
+  padding-right: 0px
+}
+
+.node.css4 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css5 img {
+  width: calc(1 * var(--width))
+}
+
+.node.css5 .bgnormal {
+  text-align: left
+}
+
+.node.css6 {
+  color: #333;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 0px
+}
+
+.node.css6 a {
+  color: rgb(27, 25, 230)
+}
+
+.textable.css7 {
+  text-align: left;
+  font-family: "Montserrat Bold";
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0em;
+  opacity: 1
+}
+
+.screen-sm .textable.css7 {
+  font-size: 31px !important
+}
+
+.screen-xs .textable.css7 {
+  font-size: 38px !important
+}
+
+.node.css8 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css8 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css9 {
+  color: #333;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css9 a {
+  color: rgb(27, 25, 230)
+}
+
+.btn.css10 {
+  text-align: center
+}
+
+.btn.css10 {
+  background-color: rgba(87, 86, 233, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-style: solid;
+  border-top-width: 0px;
+  border-bottom-width: 3px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-color: rgb(255, 255, 255);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 14px;
+  color: rgb(0, 0, 0) !important;
+}
+
+.btn.css10:hover,
+.btn.css10.hover {
+  background-color: rgba(87, 86, 233, 0);
+  border-color: rgb(87, 86, 233);
+  color: rgb(51, 51, 51) !important;
+}
+
+.btn.css10:active,
+.btn.css10.active {
+  background-color: rgba(59, 58, 229, 0);
+  border-color: rgb(87, 86, 233);
+  color: rgb(87, 86, 233) !important;
+}
+
+.btn.css10:before {}
+
+.btn.css10:active:before,
+.btn.css10.active:before {
+  background-color: rgba(59, 58, 229, 0);
+}
+
+.modal.css11 .modal-dialog {
+  width: 600px
+}
+
+.metahtml.css12 .modal1-root {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: none;
+  opacity: 0;
+  transform: scale(1.1);
+  transition: 300ms all ease-out;
+}
+
+.metahtml.css12 .modal1-root.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.metahtml.css12 .modal1-root.is-hiding {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.metahtml.css12 .modal1-header {
+  padding: 15px;
+  color: rgb(25, 25, 25);
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.metahtml.css12 .modal1-body {
+  position: relative;
+  padding: 20px;
+}
+
+.metahtml.css12 .modal1-title {
+  margin-right: 20px;
+  text-align: left;
+}
+
+.metahtml.css12 .modal1-close {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  float: right;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1;
+  opacity: 0.4;
+  margin-top: -2px;
+}
+
+.metahtml.css12 .modal1-close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.textable.css13 {
+  text-align: left;
+  font-family: "PT Sans Caption";
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0em;
+  opacity: 1
+}
+
+.btn.css14 {
+  text-align: center
+}
+
+.btn.css14 {
+  background-color: rgb(87, 86, 233);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-style: solid;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-color: rgb(31, 30, 226);
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(255, 255, 255) !important;
+}
+
+.btn.css14:hover,
+.btn.css14.hover {
+  background-color: rgb(59, 58, 229);
+  border-color: rgb(25, 24, 181);
+  color: rgb(255, 255, 255) !important;
+}
+
+.btn.css14:active,
+.btn.css14.active {
+  background-color: rgb(34, 32, 226);
+  border-color: rgb(28, 26, 203);
+  color: rgb(255, 255, 255) !important;
+}
+
+.btn.css14:before {}
+
+.btn.css14:active:before,
+.btn.css14.active:before {
+  background-color: rgb(34, 32, 226);
+}
+
+.modal.css15 .modal-dialog {
+  width: 876px
+}
+
+.metahtml.css16 .modal3-root {
+  border-radius: 25px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: scale(1.1);
+  transition: 300ms all ease-out;
+}
+
+.metahtml.css16 .modal3-root.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.metahtml.css16 .modal3-root.is-hiding {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.metahtml.css16 .modal3-panel {
+  padding: 15px;
+  border-radius: 25px;
+  background-image: linear-gradient(rgb(247, 247, 254), rgb(247, 247, 254)), url(https://i.1.creatium.io/d3/4e/84/1a8f844859487b8bcd1e48fdcf56a96ffc/miguel-henriques-1217376-unsplash-2.jpg#%7B%22size%22:%5B1200,800%5D,%22quality%22:8%7D);
+  background-position: center;
+  background-size: cover;
+}
+
+.metahtml.css16 .modal3-divider {
+  margin-top: 10px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+}
+
+.metahtml.css16 .modal3-close {
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 100px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  top: -10px;
+  right: -10px;
+  transition: transform 200ms;
+}
+
+.metahtml.css16 .modal3-close-h,
+.metahtml.css16 .modal3-close-v {
+  background-color: black;
+  display: block;
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.metahtml.css16 .modal3-close-h {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.metahtml.css16 .modal3-close-v {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.metahtml.css16 .modal3-close:hover {
+  transform: scale(1.1);
+}
+
+.node.css17 {
+  color: #FFF;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 20px
+}
+
+.screen-xs .node.css17 {
+  padding-left: 5px !important
+}
+
+.node.css17 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css18 {
+  color: #FFF;
+  padding-top: 57px;
+  padding-bottom: 115px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css18 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css19 {
+  color: #FFF;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css19 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css20 .bgimage {
+  height: 40px;
+  background-position: center
+}
+
+.node.css20 img.selectable {
+  max-height: 40px
+}
+
+.node.css20 .proportions {
+  width: calc(var(--width) / var(--height) * 40);
+  padding-top: 40px
+}
+
+.node.css21 {
+  color: #FFF;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css21 a {
+  color: rgb(27, 25, 230)
+}
+
+.textable.css22 {
+  text-align: left;
+  font-family: "Montserrat Bold";
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0em;
+  color: rgb(0, 0, 0);
+  opacity: 1
+}
+
+.screen-sm .textable.css22 {
+  font-size: 31px !important
+}
+
+.screen-xs .textable.css22 {
+  font-size: 38px !important
+}
+
+.node.css23 {
+  color: #FFF
+}
+
+.node.css23 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css24>.zero-grid {
+  height: 297px
+}
+
+.zero-layer.css25>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 8;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css25>.zero-layer-axis {
+  height: 297px
+}
+
+.zero-layer.css25>.zero-layer-axis>.zero-layer-frame {
+  left: -2.1px;
+  top: 1.5px;
+  width: 308.71px
+}
+
+.zero-layer.css26>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 9;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css26>.zero-layer-axis {
+  height: 297px
+}
+
+.zero-layer.css26>.zero-layer-axis>.zero-layer-frame {
+  left: -100px;
+  top: 50px;
+  width: 155px
+}
+
+.zero-layer.css27>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 10;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css27>.zero-layer-axis {
+  height: 297px
+}
+
+.zero-layer.css27>.zero-layer-axis>.zero-layer-frame {
+  left: 0px;
+  top: -27px;
+  width: 158.71px
+}
+
+.zero-layer.css28>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 11;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css28>.zero-layer-axis {
+  height: 297px
+}
+
+.zero-layer.css28>.zero-layer-axis>.zero-layer-frame {
+  left: 48.05px;
+  top: 54px;
+  width: 130.61px
+}
+
+.node.css29>.wrapper1 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px
+}
+
+.node.css29 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.node.css29 a {
+  color: rgb(25, 133, 230)
+}
+
+.node.css30 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.screen-xs .node.css30 {
+  padding-left: 0px !important;
+  padding-right: 0px !important
+}
+
+.node.css30 a {
+  color: rgb(25, 133, 230)
+}
+
+.metahtml.css31 .form1-cover {
+  padding: 20px 15px;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(87, 86, 233);
+  border-style: none;
+  border-width: 2px;
+  border-radius: 0px;
+  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.node.css32 {
+  color: #333;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 5px
+}
+
+.node.css32 a {
+  color: rgb(25, 133, 230)
+}
+
+.textable.css33 {
+  text-align: left;
+  font-family: "TTNorms Bold";
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  opacity: 1
+}
+
+.node.css34 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 5px
+}
+
+.node.css34 a {
+  color: rgb(25, 133, 230)
+}
+
+.textable.css35 {
+  text-align: left;
+  font-family: "PT Sans Caption";
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  opacity: 1
+}
+
+.screen-xs .textable.css35 {
+  text-align: center !important
+}
+
+.node.css36 {
+  color: #333;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.node.css36>.wrapper1 {
+  border-radius: 10px
+}
+
+.node.css36 a {
+  color: rgb(25, 133, 230)
+}
+
+.metahtml.css37 [cr-field] {
+  padding-bottom: 16px;
+  font-size: 14px;
+  font-family: PT Sans Caption;
+}
+
+.metahtml.css37 .name {
+  font-weight: normal;
+  font-family: PT Sans Caption;
+  opacity: 0.8;
+  margin-bottom: 5px;
+  font-size: 10px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  ;
+  letter-spacing: 0.1em;
+  ;
+}
+
+.metahtml.css37 .form-control {
+  height: auto;
+  line-height: 1.2;
+  box-shadow: none;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 12px 9.6px;
+  font-size: 14px;
+  cursor: initial;
+}
+
+.metahtml.css37 .form-control:focus,
+.metahtml.css37 .form-control:focus-within {
+  border-color: rgb(241, 193, 22);
+  background-color: rgb(252, 252, 252);
+}
+
+.metahtml.css37 .form-control+.form-control {
+  margin-top: 10px;
+}
+
+.metahtml.css37 label {
+  font-weight: normal;
+  display: block;
+  cursor: pointer;
+}
+
+.metahtml.css37 textarea {
+  resize: vertical;
+}
+
+.metahtml.css37 .checkbox {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  margin: 0 5.5px 0 0;
+  line-height: 0;
+  min-height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  background: white;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  position: relative;
+  transition: 300ms all;
+  border-radius: 2px;
+}
+
+.metahtml.css37 .checkbox svg {
+  width: 100%;
+  opacity: 0;
+  transform: scale(0);
+  transition: 300ms all;
+}
+
+.metahtml.css37 input:hover~.checkbox,
+.metahtml.css37 input:focus~.checkbox {
+  border-color: rgb(248, 224, 139);
+}
+
+.metahtml.css37 input:checked~.checkbox {
+  border-color: rgb(223, 177, 13);
+  background-color: rgb(241, 193, 22);
+}
+
+.metahtml.css37 input:active~.checkbox {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.metahtml.css37 input:checked~.checkbox svg {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.metahtml.css37 .radio {
+  margin: 0;
+  margin: 0 5.5px 0 0;
+  padding: 0;
+  line-height: 0;
+  width: 22px;
+  height: 22px;
+  min-height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  background: white;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  position: relative;
+  transition: 300ms all;
+  border-radius: 100px;
+}
+
+.metahtml.css37 .radio:before {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  content: '';
+  display: block;
+  background-color: white;
+  border-radius: 100px;
+  opacity: 0;
+  transform: scale(0);
+  transition: 300ms all;
+}
+
+.metahtml.css37 input:hover~.radio,
+.metahtml.css37 input:focus~.radio {
+  border-color: rgb(248, 224, 139);
+}
+
+.metahtml.css37 input:active~.radio {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.metahtml.css37 input:checked~.radio {
+  border-color: rgb(223, 177, 13);
+  background-color: rgb(241, 193, 22);
+}
+
+.metahtml.css37 input:checked~.radio:before {
+  opacity: 1;
+  transform: scale(0.5);
+}
+
+.metahtml.css37 [cr-field="checkbox-list"] span {
+  vertical-align: middle;
+}
+
+.metahtml.css37 [cr-field="checkbox-list"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.metahtml.css37 [cr-field="checkbox-list"] label+label {
+  margin-top: 7.333333333333333px;
+}
+
+.metahtml.css37 [cr-field="checkbox-visual"] {
+  overflow: hidden;
+}
+
+.metahtml.css37 [cr-field="checkbox-visual"] .items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+  justify-content: space-between;
+}
+
+.metahtml.css37 [cr-field="checkbox-visual"] .item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+.metahtml.css37 [cr-field="checkbox-visual"] label {
+  position: relative;
+}
+
+.metahtml.css37 [cr-field="checkbox-visual"] .bgimage {
+  background-size: cover;
+  display: inline-block;
+  background-position: center;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.metahtml.css37 [cr-field="checkbox-visual"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.metahtml.css37 [cr-field="checkbox-visual"] .tick {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(241, 193, 22, 0.75);
+  transition: all 300ms;
+  opacity: 0;
+}
+
+.metahtml.css37 [cr-field="checkbox-visual"] .tick svg {
+  opacity: 0;
+  transition: all 300ms;
+  max-width: 26px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.metahtml.css37 [cr-field="checkbox-visual"] .subname {
+  margin: 7px 0;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.metahtml.css37 [cr-field="checkbox-visual"] input:hover~.bgimage .tick,
+.metahtml.css37 [cr-field="checkbox-visual"] input:focus~.bgimage .tick {
+  opacity: 0.5;
+}
+
+.metahtml.css37 [cr-field="checkbox-visual"] input:checked~.bgimage .tick,
+.metahtml.css37 [cr-field="checkbox-visual"] input:checked~.bgimage .tick svg {
+  opacity: 1;
+}
+
+.screen-xs .metahtml.css37 [cr-field="checkbox-visual"] .item {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.screen-xs .metahtml.css37 [cr-field="checkbox-visual"] .bgimage {
+  width: 25%;
+  padding-top: 25%;
+  vertical-align: middle;
+}
+
+.screen-xs .metahtml.css37 [cr-field="checkbox-visual"] .subname {
+  width: 75%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5%;
+  margin-left: -4px;
+}
+
+.metahtml.css37 [cr-field="checkbox-input"] span {
+  vertical-align: middle;
+}
+
+.metahtml.css37 [cr-field="checkbox-input"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.metahtml.css37 [cr-field="radio-list"] span {
+  vertical-align: middle;
+}
+
+.metahtml.css37 [cr-field="radio-list"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.metahtml.css37 [cr-field="radio-list"] label+label {
+  margin-top: 7.333333333333333px;
+}
+
+.metahtml.css37 [cr-field="radio-visual"] {
+  overflow: hidden;
+}
+
+.metahtml.css37 [cr-field="radio-visual"] .items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+  justify-content: space-between;
+}
+
+.metahtml.css37 [cr-field="radio-visual"] .item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+.metahtml.css37 [cr-field="radio-visual"] label {
+  position: relative;
+}
+
+.metahtml.css37 [cr-field="radio-visual"] .bgimage {
+  background-size: cover;
+  display: inline-block;
+  background-position: center;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.metahtml.css37 [cr-field="radio-visual"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.metahtml.css37 [cr-field="radio-visual"] .tick {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(241, 193, 22, 0.75);
+  transition: all 300ms;
+  opacity: 0;
+}
+
+.metahtml.css37 [cr-field="radio-visual"] .tick svg {
+  opacity: 0;
+  transition: all 300ms;
+  max-width: 26px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.metahtml.css37 [cr-field="radio-visual"] .subname {
+  margin: 7px 0;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.metahtml.css37 [cr-field="radio-visual"] input:hover~.bgimage .tick {
+  opacity: 0.5;
+}
+
+.metahtml.css37 [cr-field="radio-visual"] input:checked~.bgimage .tick,
+.metahtml.css37 [cr-field="radio-visual"] input:checked~.bgimage .tick svg {
+  opacity: 1;
+}
+
+.screen-xs .metahtml.css37 [cr-field="radio-visual"] .item {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.screen-xs .metahtml.css37 [cr-field="radio-visual"] .bgimage {
+  width: 25%;
+  padding-top: 25%;
+  vertical-align: middle;
+}
+
+.screen-xs .metahtml.css37 [cr-field="radio-visual"] .subname {
+  width: 75%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5%;
+  margin-left: -4px;
+}
+
+.metahtml.css37 [cr-field="select-menu"] select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+  color: black;
+  -webkit-appearance: none;
+}
+
+.metahtml.css37 [cr-field="select-menu"] .fa {
+  font-size: 20px;
+  line-height: 0;
+  opacity: 0.5;
+  vertical-align: middle;
+}
+
+.metahtml.css37 [cr-field="select-menu"] .flexgrid {
+  display: flex;
+  align-items: center;
+}
+
+.metahtml.css37 [cr-field="select-menu"] .flexgrid .left {
+  flex-grow: 1;
+  min-width: 50%;
+  word-wrap: break-word;
+}
+
+.metahtml.css37 [cr-field="file"] svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.metahtml.css37 [cr-field="file"] span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.metahtml.css37 [cr-field="file"] input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.metahtml.css37 [cr-field="file"] .clean {
+  float: right;
+  opacity: 0.5;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.metahtml.css37 [cr-field="file"] .clean:hover {
+  opacity: 1;
+}
+
+.metahtml.css37 [cr-field="file"] .flexgrid {
+  display: flex;
+  align-items: center;
+}
+
+.metahtml.css37 [cr-field="file"] .flexgrid .center {
+  flex-grow: 1;
+  min-width: 50%;
+  word-wrap: break-word;
+}
+
+.metahtml.css37 [cr-field="result"] .flexgrid.align-sides {
+  display: flex;
+  align-items: center;
+}
+
+.metahtml.css37 [cr-field="result"] .flexgrid.align-sides .left .name {
+  margin-bottom: 0;
+}
+
+.metahtml.css37 [cr-field="result"] .flexgrid.align-center .left {
+  text-align: center;
+}
+
+.metahtml.css37 [cr-field="result"] .flexgrid.align-right .left {
+  text-align: right;
+}
+
+.metahtml.css37 [cr-field="result"] .flexgrid .right {
+  flex-grow: 1;
+  min-width: 25%;
+  word-wrap: break-word;
+  text-align: right;
+  font-size: 120%;
+}
+
+.metahtml.css37 [cr-field="result"] .flexgrid.align-left .right {
+  text-align: left;
+}
+
+.metahtml.css37 [cr-field="result"] .flexgrid.align-center .right {
+  text-align: center;
+}
+
+.metahtml.css37 [cr-field="result"] .flexgrid.align-right .right {
+  text-align: right;
+}
+
+.metahtml.css37 [cr-field="privacy-button"] .open {
+  text-align: center;
+  opacity: 0.5;
+  font-size: 80%;
+  cursor: pointer;
+}
+
+.metahtml.css37 [cr-field="privacy-button"] .open a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.metahtml.css37 [cr-field="privacy-checkbox"] {
+  font-size: 80%;
+}
+
+.metahtml.css37 [cr-field="privacy-checkbox"] span {
+  vertical-align: middle;
+}
+
+.metahtml.css37 [cr-field="privacy-checkbox"] a {
+  vertical-align: middle;
+  text-decoration: none;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  color: inherit;
+  cursor: pointer;
+}
+
+.metahtml.css37 [cr-field="privacy-checkbox"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.metahtml.css37 [cr-field="privacy-text"] {
+  font-size: 80%;
+  text-align: center;
+}
+
+.metahtml.css37 [cr-field="privacy-text"] a {
+  text-decoration: none;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  color: inherit;
+  cursor: pointer;
+}
+
+.metahtml.css37 [cr-field="hidden"] {
+  opacity: 0.25;
+}
+
+.node.css38 {
+  color: #333;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.node.css38 a {
+  color: rgb(25, 133, 230)
+}
+
+.metahtml.css39 [cr-field] {
+  padding-bottom: 16px;
+  font-size: 14px;
+  font-family: PT Sans Caption;
+}
+
+.metahtml.css39 .name {
+  font-weight: normal;
+  font-family: PT Sans Caption;
+  opacity: 0.8;
+  margin-bottom: 5px;
+  font-size: 10px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  ;
+  letter-spacing: 0.1em;
+  ;
+}
+
+.metahtml.css39 .form-control {
+  height: auto;
+  line-height: 1.2;
+  box-shadow: none;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 12px 9.6px;
+  font-size: 14px;
+  cursor: initial;
+}
+
+.metahtml.css39 .form-control:focus,
+.metahtml.css39 .form-control:focus-within {
+  border-color: rgb(241, 193, 22);
+  background-color: rgb(252, 252, 252);
+}
+
+.metahtml.css39 .form-control+.form-control {
+  margin-top: 10px;
+}
+
+.metahtml.css39 label {
+  font-weight: normal;
+  display: block;
+  cursor: pointer;
+}
+
+.metahtml.css39 textarea {
+  resize: vertical;
+}
+
+.metahtml.css39 .checkbox {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  margin: 0 5.5px 0 0;
+  line-height: 0;
+  min-height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  background: white;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  position: relative;
+  transition: 300ms all;
+  border-radius: 2px;
+}
+
+.metahtml.css39 .checkbox svg {
+  width: 100%;
+  opacity: 0;
+  transform: scale(0);
+  transition: 300ms all;
+}
+
+.metahtml.css39 input:hover~.checkbox,
+.metahtml.css39 input:focus~.checkbox {
+  border-color: rgb(248, 224, 139);
+}
+
+.metahtml.css39 input:checked~.checkbox {
+  border-color: rgb(223, 177, 13);
+  background-color: rgb(241, 193, 22);
+}
+
+.metahtml.css39 input:active~.checkbox {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.metahtml.css39 input:checked~.checkbox svg {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.metahtml.css39 .radio {
+  margin: 0;
+  margin: 0 5.5px 0 0;
+  padding: 0;
+  line-height: 0;
+  width: 22px;
+  height: 22px;
+  min-height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  background: white;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  position: relative;
+  transition: 300ms all;
+  border-radius: 100px;
+}
+
+.metahtml.css39 .radio:before {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  content: '';
+  display: block;
+  background-color: white;
+  border-radius: 100px;
+  opacity: 0;
+  transform: scale(0);
+  transition: 300ms all;
+}
+
+.metahtml.css39 input:hover~.radio,
+.metahtml.css39 input:focus~.radio {
+  border-color: rgb(248, 224, 139);
+}
+
+.metahtml.css39 input:active~.radio {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.metahtml.css39 input:checked~.radio {
+  border-color: rgb(223, 177, 13);
+  background-color: rgb(241, 193, 22);
+}
+
+.metahtml.css39 input:checked~.radio:before {
+  opacity: 1;
+  transform: scale(0.5);
+}
+
+.metahtml.css39 [cr-field="checkbox-list"] span {
+  vertical-align: middle;
+}
+
+.metahtml.css39 [cr-field="checkbox-list"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.metahtml.css39 [cr-field="checkbox-list"] label+label {
+  margin-top: 7.333333333333333px;
+}
+
+.metahtml.css39 [cr-field="checkbox-visual"] {
+  overflow: hidden;
+}
+
+.metahtml.css39 [cr-field="checkbox-visual"] .items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+  justify-content: space-between;
+}
+
+.metahtml.css39 [cr-field="checkbox-visual"] .item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+.metahtml.css39 [cr-field="checkbox-visual"] label {
+  position: relative;
+}
+
+.metahtml.css39 [cr-field="checkbox-visual"] .bgimage {
+  background-size: cover;
+  display: inline-block;
+  background-position: center;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.metahtml.css39 [cr-field="checkbox-visual"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.metahtml.css39 [cr-field="checkbox-visual"] .tick {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(241, 193, 22, 0.75);
+  transition: all 300ms;
+  opacity: 0;
+}
+
+.metahtml.css39 [cr-field="checkbox-visual"] .tick svg {
+  opacity: 0;
+  transition: all 300ms;
+  max-width: 26px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.metahtml.css39 [cr-field="checkbox-visual"] .subname {
+  margin: 7px 0;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.metahtml.css39 [cr-field="checkbox-visual"] input:hover~.bgimage .tick,
+.metahtml.css39 [cr-field="checkbox-visual"] input:focus~.bgimage .tick {
+  opacity: 0.5;
+}
+
+.metahtml.css39 [cr-field="checkbox-visual"] input:checked~.bgimage .tick,
+.metahtml.css39 [cr-field="checkbox-visual"] input:checked~.bgimage .tick svg {
+  opacity: 1;
+}
+
+.screen-xs .metahtml.css39 [cr-field="checkbox-visual"] .item {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.screen-xs .metahtml.css39 [cr-field="checkbox-visual"] .bgimage {
+  width: 25%;
+  padding-top: 25%;
+  vertical-align: middle;
+}
+
+.screen-xs .metahtml.css39 [cr-field="checkbox-visual"] .subname {
+  width: 75%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5%;
+  margin-left: -4px;
+}
+
+.metahtml.css39 [cr-field="checkbox-input"] span {
+  vertical-align: middle;
+}
+
+.metahtml.css39 [cr-field="checkbox-input"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.metahtml.css39 [cr-field="radio-list"] span {
+  vertical-align: middle;
+}
+
+.metahtml.css39 [cr-field="radio-list"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.metahtml.css39 [cr-field="radio-list"] label+label {
+  margin-top: 7.333333333333333px;
+}
+
+.metahtml.css39 [cr-field="radio-visual"] {
+  overflow: hidden;
+}
+
+.metahtml.css39 [cr-field="radio-visual"] .items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+  justify-content: space-between;
+}
+
+.metahtml.css39 [cr-field="radio-visual"] .item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+.metahtml.css39 [cr-field="radio-visual"] label {
+  position: relative;
+}
+
+.metahtml.css39 [cr-field="radio-visual"] .bgimage {
+  background-size: cover;
+  display: inline-block;
+  background-position: center;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.metahtml.css39 [cr-field="radio-visual"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.metahtml.css39 [cr-field="radio-visual"] .tick {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(241, 193, 22, 0.75);
+  transition: all 300ms;
+  opacity: 0;
+}
+
+.metahtml.css39 [cr-field="radio-visual"] .tick svg {
+  opacity: 0;
+  transition: all 300ms;
+  max-width: 26px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.metahtml.css39 [cr-field="radio-visual"] .subname {
+  margin: 7px 0;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.metahtml.css39 [cr-field="radio-visual"] input:hover~.bgimage .tick {
+  opacity: 0.5;
+}
+
+.metahtml.css39 [cr-field="radio-visual"] input:checked~.bgimage .tick,
+.metahtml.css39 [cr-field="radio-visual"] input:checked~.bgimage .tick svg {
+  opacity: 1;
+}
+
+.screen-xs .metahtml.css39 [cr-field="radio-visual"] .item {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.screen-xs .metahtml.css39 [cr-field="radio-visual"] .bgimage {
+  width: 25%;
+  padding-top: 25%;
+  vertical-align: middle;
+}
+
+.screen-xs .metahtml.css39 [cr-field="radio-visual"] .subname {
+  width: 75%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5%;
+  margin-left: -4px;
+}
+
+.metahtml.css39 [cr-field="select-menu"] select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+  color: black;
+  -webkit-appearance: none;
+}
+
+.metahtml.css39 [cr-field="select-menu"] .fa {
+  font-size: 20px;
+  line-height: 0;
+  opacity: 0.5;
+  vertical-align: middle;
+}
+
+.metahtml.css39 [cr-field="select-menu"] .flexgrid {
+  display: flex;
+  align-items: center;
+}
+
+.metahtml.css39 [cr-field="select-menu"] .flexgrid .left {
+  flex-grow: 1;
+  min-width: 50%;
+  word-wrap: break-word;
+}
+
+.metahtml.css39 [cr-field="file"] svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.metahtml.css39 [cr-field="file"] span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.metahtml.css39 [cr-field="file"] input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.metahtml.css39 [cr-field="file"] .clean {
+  float: right;
+  opacity: 0.5;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.metahtml.css39 [cr-field="file"] .clean:hover {
+  opacity: 1;
+}
+
+.metahtml.css39 [cr-field="file"] .flexgrid {
+  display: flex;
+  align-items: center;
+}
+
+.metahtml.css39 [cr-field="file"] .flexgrid .center {
+  flex-grow: 1;
+  min-width: 50%;
+  word-wrap: break-word;
+}
+
+.metahtml.css39 [cr-field="result"] .flexgrid.align-sides {
+  display: flex;
+  align-items: center;
+}
+
+.metahtml.css39 [cr-field="result"] .flexgrid.align-sides .left .name {
+  margin-bottom: 0;
+}
+
+.metahtml.css39 [cr-field="result"] .flexgrid.align-center .left {
+  text-align: center;
+}
+
+.metahtml.css39 [cr-field="result"] .flexgrid.align-right .left {
+  text-align: right;
+}
+
+.metahtml.css39 [cr-field="result"] .flexgrid .right {
+  flex-grow: 1;
+  min-width: 25%;
+  word-wrap: break-word;
+  text-align: right;
+  font-size: 100%;
+}
+
+.metahtml.css39 [cr-field="result"] .flexgrid.align-left .right {
+  text-align: left;
+}
+
+.metahtml.css39 [cr-field="result"] .flexgrid.align-center .right {
+  text-align: center;
+}
+
+.metahtml.css39 [cr-field="result"] .flexgrid.align-right .right {
+  text-align: right;
+}
+
+.metahtml.css39 [cr-field="privacy-button"] .open {
+  text-align: center;
+  opacity: 0.5;
+  font-size: 80%;
+  cursor: pointer;
+}
+
+.metahtml.css39 [cr-field="privacy-button"] .open a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.metahtml.css39 [cr-field="privacy-checkbox"] {
+  font-size: 80%;
+}
+
+.metahtml.css39 [cr-field="privacy-checkbox"] span {
+  vertical-align: middle;
+}
+
+.metahtml.css39 [cr-field="privacy-checkbox"] a {
+  vertical-align: middle;
+  text-decoration: none;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  color: inherit;
+  cursor: pointer;
+}
+
+.metahtml.css39 [cr-field="privacy-checkbox"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.metahtml.css39 [cr-field="privacy-text"] {
+  font-size: 80%;
+  text-align: center;
+}
+
+.metahtml.css39 [cr-field="privacy-text"] a {
+  text-decoration: none;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  color: inherit;
+  cursor: pointer;
+}
+
+.metahtml.css39 [cr-field="hidden"] {
+  opacity: 0.25;
+}
+
+.screen-lg .metahtml.css40 .label {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.screen-lg .metahtml.css40 .label:nth-of-type(2) {
+  margin-top: 0;
+}
+
+.screen-lg .metahtml.css40 .label:nth-of-type(0) {
+  margin-top: 0;
+}
+
+.screen-lg .metahtml.css40 .label:nth-of-type(0) {
+  margin-top: 0;
+}
+
+.screen-md .metahtml.css40 .label {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.screen-md .metahtml.css40 .label:nth-of-type(2) {
+  margin-top: 0;
+}
+
+.screen-md .metahtml.css40 .label:nth-of-type(0) {
+  margin-top: 0;
+}
+
+.screen-md .metahtml.css40 .label:nth-of-type(0) {
+  margin-top: 0;
+}
+
+.screen-sm .metahtml.css40 .label {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.screen-sm .metahtml.css40 .label:nth-of-type(2) {
+  margin-top: 0;
+}
+
+.screen-sm .metahtml.css40 .label:nth-of-type(0) {
+  margin-top: 0;
+}
+
+.screen-sm .metahtml.css40 .label:nth-of-type(0) {
+  margin-top: 0;
+}
+
+.screen-xs .metahtml.css40 .label {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.screen-xs .metahtml.css40 .label:nth-of-type(2) {
+  margin-top: 0;
+}
+
+.screen-xs .metahtml.css40 .label:nth-of-type(0) {
+  margin-top: 0;
+}
+
+.screen-xs .metahtml.css40 .label:nth-of-type(0) {
+  margin-top: 0;
+}
+
+.node.css41 {
+  color: #333;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.screen-xs .node.css41 {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important
+}
+
+.node.css41 a {
+  color: rgb(25, 133, 230)
+}
+
+.node.css42>.wrapper1 {
+  background-color: white
+}
+
+.node.css42 {
+  color: #333
+}
+
+.node.css42>.padding_top {
+  padding-top: 100px
+}
+
+.screen-xs .node.css42>.padding_top {
+  padding-top: 40px !important
+}
+
+.node.css42>.padding_bottom {
+  padding-bottom: 100px
+}
+
+.screen-xs .node.css42>.padding_bottom {
+  padding-bottom: 40px !important
+}
+
+.node.css42 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css43 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.screen-xs .node.css43 {
+  padding-left: 15px !important;
+  padding-right: 15px !important
+}
+
+.node.css43 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css44 {
+  color: #333;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.screen-xs .node.css44 {
+  padding-bottom: 20px !important
+}
+
+.node.css44 a {
+  color: rgb(27, 25, 230)
+}
+
+.metahtml.css45 .outer {
+  position: relative;
+  text-align: left;
+}
+
+.metahtml.css45 .inner {
+  display: inline-block;
+}
+
+.metahtml.css45 .inner:after {
+  content: '';
+  display: block;
+  height: 30px;
+  margin-top: -33px;
+  background-image: linear-gradient(to right, rgb(188, 187, 246), rgb(238, 238, 253));
+}
+
+.textable.css46 {
+  text-align: left;
+  font-family: "Montserrat";
+  font-size: 72px;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  color: rgb(51, 51, 51);
+  opacity: 1
+}
+
+.screen-md .textable.css46 {
+  font-size: 64px !important
+}
+
+.screen-sm .textable.css46 {
+  font-size: 56px !important
+}
+
+.screen-xs .textable.css46 {
+  text-align: left !important;
+  font-size: 36px !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0em !important
+}
+
+.node.css47 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.screen-xs .node.css47 {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important
+}
+
+.node.css47 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css48 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.screen-xs .node.css48 {
+  padding-top: 0px !important
+}
+
+.node.css48 a {
+  color: rgb(27, 25, 230)
+}
+
+.textable.css49 {
+  text-align: left;
+  font-family: "Montserrat Bold";
+  font-size: 36px;
+  line-height: 1.6;
+  letter-spacing: 0em;
+  color: rgb(51, 51, 51);
+  opacity: 1
+}
+
+.screen-md .textable.css49 {
+  font-size: 30px !important
+}
+
+.screen-sm .textable.css49 {
+  font-size: 20px !important
+}
+
+.screen-xs .textable.css49 {
+  font-size: 20px !important
+}
+
+.node.css50 {
+  color: #333;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css50 a {
+  color: rgb(27, 25, 230)
+}
+
+.textable.css51 {
+  text-align: left;
+  font-family: "PT Sans Caption";
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0em;
+  color: rgb(153, 153, 153);
+  opacity: 1
+}
+
+.screen-md .textable.css51 {
+  font-size: 15px !important
+}
+
+.screen-sm .textable.css51 {
+  font-size: 15px !important
+}
+
+.screen-xs .textable.css51 {
+  font-size: 15px !important
+}
+
+.textable.css52 {
+  text-align: left;
+  font-family: "Montserrat Bold";
+  font-size: 36px;
+  line-height: 1.6;
+  letter-spacing: 0em;
+  color: rgb(26, 26, 26);
+  opacity: 1
+}
+
+.screen-md .textable.css52 {
+  font-size: 30px !important
+}
+
+.screen-sm .textable.css52 {
+  font-size: 20px !important
+}
+
+.screen-xs .textable.css52 {
+  font-size: 20px !important
+}
+
+.textable.css53 {
+  text-align: left;
+  font-family: "PT Sans Caption";
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0em;
+  color: rgb(153, 153, 153);
+  opacity: 1
+}
+
+.node.css54 {
+  color: #333
+}
+
+.node.css54 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css55>.zero-grid {
+  height: 326px
+}
+
+.zero-layer.css56>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 8;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css56>.zero-layer-axis {
+  height: 326px
+}
+
+.zero-layer.css56>.zero-layer-axis>.zero-layer-frame {
+  left: 40px;
+  top: -10px;
+  width: 270px
+}
+
+.screen-md .zero-layer.css56>.zero-layer-axis>.zero-layer-frame {
+  left: 10px !important;
+  top: -29px !important;
+  width: 241.78px !important
+}
+
+.screen-sm .zero-layer.css56>.zero-layer-axis>.zero-layer-frame {
+  left: -16.07px !important;
+  top: -20px !important;
+  width: 204.15px !important
+}
+
+.screen-xs .zero-layer.css56>.zero-layer-axis>.zero-layer-frame {
+  left: -28.69px !important;
+  top: 24px !important;
+  width: 184.39px !important
+}
+
+.zero-layer.css57>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 9;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css57>.zero-layer-axis {
+  height: 326px
+}
+
+.zero-layer.css57>.zero-layer-axis>.zero-layer-frame {
+  left: 80px;
+  top: 31px;
+  width: 80px
+}
+
+.screen-md .zero-layer.css57>.zero-layer-axis>.zero-layer-frame {
+  left: 42px !important;
+  top: 23px !important
+}
+
+.screen-sm .zero-layer.css57>.zero-layer-axis>.zero-layer-frame {
+  left: 20px !important;
+  top: -3px !important;
+  width: 66px !important
+}
+
+.screen-xs .zero-layer.css57>.zero-layer-axis>.zero-layer-frame {
+  left: 0px !important;
+  top: -6.5px !important;
+  width: 63.5px !important
+}
+
+.zero-layer.css58>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 10;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css58>.zero-layer-axis {
+  height: 326px
+}
+
+.zero-layer.css58>.zero-layer-axis>.zero-layer-frame {
+  left: -79px;
+  top: -17px;
+  width: 80px
+}
+
+.screen-md .zero-layer.css58>.zero-layer-axis>.zero-layer-frame {
+  left: -28px !important;
+  top: -17px !important
+}
+
+.screen-sm .zero-layer.css58>.zero-layer-axis>.zero-layer-frame {
+  left: 9.14px !important;
+  top: -46px !important;
+  width: 69.14px !important
+}
+
+.screen-xs .zero-layer.css58>.zero-layer-axis>.zero-layer-frame {
+  left: 10px !important;
+  top: -45px !important;
+  width: 60px !important
+}
+
+.zero-layer.css59>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 11;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css59>.zero-layer-axis {
+  height: 326px
+}
+
+.zero-layer.css59>.zero-layer-axis>.zero-layer-frame {
+  left: 0px;
+  top: 0px;
+  width: 270px;
+  height: 211px
+}
+
+.screen-md .zero-layer.css59>.zero-layer-axis>.zero-layer-frame {
+  left: 13px !important;
+  top: -11.5px !important
+}
+
+.screen-sm .zero-layer.css59>.zero-layer-axis>.zero-layer-frame {
+  left: 0px !important;
+  top: -11.5px !important
+}
+
+.screen-xs .zero-layer.css59>.zero-layer-axis>.zero-layer-frame {
+  left: -10.81px !important;
+  top: 0px !important;
+  width: 227px !important;
+  height: 187px !important
+}
+
+.zero-layer.css60>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 8;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css60>.zero-layer-axis {
+  height: 100%
+}
+
+.zero-layer.css60>.zero-layer-axis>.zero-layer-frame {
+  left: -19.3px;
+  top: 0px;
+  width: 270px
+}
+
+.screen-sm .zero-layer.css60>.zero-layer-axis>.zero-layer-frame {
+  left: 0px !important;
+  top: 0px !important;
+  width: 241.45px !important
+}
+
+.screen-xs .zero-layer.css60>.zero-layer-axis>.zero-layer-frame {
+  left: 0px !important;
+  top: 0px !important;
+  width: 230px !important
+}
+
+.zero-layer.css61>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 9;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css61>.zero-layer-axis {
+  height: 100%
+}
+
+.zero-layer.css61>.zero-layer-axis>.zero-layer-frame {
+  left: 20px;
+  top: 12.5px;
+  width: 67.14px
+}
+
+.screen-sm .zero-layer.css61>.zero-layer-axis>.zero-layer-frame {
+  left: 40px !important;
+  top: 10px !important;
+  width: 50px !important
+}
+
+.screen-xs .zero-layer.css61>.zero-layer-axis>.zero-layer-frame {
+  left: 20px !important;
+  top: 7.12px !important;
+  width: 55.6px !important
+}
+
+.zero-layer.css62>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 10;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css62>.zero-layer-axis {
+  height: 100%
+}
+
+.zero-layer.css62>.zero-layer-axis>.zero-layer-frame {
+  left: 7.85px;
+  top: -51.5px;
+  width: 54.3px
+}
+
+.screen-sm .zero-layer.css62>.zero-layer-axis>.zero-layer-frame {
+  left: 0px !important;
+  top: 19.5px !important;
+  width: 52.15px !important
+}
+
+.screen-xs .zero-layer.css62>.zero-layer-axis>.zero-layer-frame {
+  left: 7.99px !important;
+  top: 21.63px !important;
+  width: 50.53px !important
+}
+
+.zero-layer.css63>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 11;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css63>.zero-layer-axis {
+  height: 100%
+}
+
+.zero-layer.css63>.zero-layer-axis>.zero-layer-frame {
+  left: 0px;
+  top: -19px;
+  width: 70px
+}
+
+.screen-xs .zero-layer.css63>.zero-layer-axis>.zero-layer-frame {
+  left: 7.88px !important;
+  top: -20px !important;
+  width: 56.35px !important
+}
+
+.node.css64>.wrapper1 {
+  background-color: white
+}
+
+.node.css64 {
+  color: #333
+}
+
+.node.css64>.padding_top {
+  padding-top: 80px
+}
+
+.node.css64>.padding_bottom {
+  padding-bottom: 80px
+}
+
+.node.css64 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css65 .s-elements-cell {
+  width: 33.333333333333336%
+}
+
+.node.css65 .s-elements-grid {
+  margin: 0 -10px
+}
+
+.node.css65 .s-elements-cellwrapper {
+  padding: 17.5px 10px
+}
+
+.screen-sm .node.css65 .s-elements-cell {
+  width: 100% !important
+}
+
+.screen-sm .node.css65 .s-elements-cellwrapper {
+  padding-left: 10px !important;
+  padding-right: 10px !important
+}
+
+.screen-xs .node.css65 .s-elements-cell {
+  width: 100% !important
+}
+
+.node.css66 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.screen-xs .node.css66 {
+  padding-left: 15px !important;
+  padding-right: 15px !important
+}
+
+.node.css66 a {
+  color: rgb(27, 25, 230)
+}
+
+.metahtml.css67 .outer {
+  position: relative;
+  text-align: center;
+}
+
+.metahtml.css67 .inner {
+  display: inline-block;
+}
+
+.metahtml.css67 .inner:after {
+  content: '';
+  display: block;
+  height: 26px;
+  margin-top: -27px;
+  background-image: linear-gradient(to right, rgb(188, 187, 246), rgb(238, 238, 253));
+}
+
+.textable.css68 {
+  text-align: center;
+  font-family: "Montserrat Bold";
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  color: rgb(51, 51, 51);
+  opacity: 1
+}
+
+.screen-xs .textable.css68 {
+  font-size: 40px !important
+}
+
+.node.css69 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.screen-sm .node.css69 {
+  padding-left: 0px !important;
+  padding-right: 0px !important
+}
+
+.node.css69>.wrapper1 {
+  border-radius: 6px
+}
+
+.node.css69 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css70>.wrapper1 {
+  background-color: rgb(238, 238, 253);
+  border-radius: 22px
+}
+
+.node.css70 {
+  color: #333;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+.node.css70 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css71>.wrapper1 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px
+}
+
+.node.css71 {
+  color: #333;
+  padding-top: 40px;
+  padding-bottom: 42px;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.node.css71 a {
+  color: rgb(30, 25, 230)
+}
+
+.node.css72 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css72 a {
+  color: rgb(30, 25, 230)
+}
+
+.node.css73 .bgimage {
+  height: 140px;
+  background-position: center
+}
+
+.node.css73 img.selectable {
+  max-height: 140px
+}
+
+.node.css73 .proportions {
+  width: calc(var(--width) / var(--height) * 140);
+  padding-top: 140px
+}
+
+.node.css74 {
+  color: #333;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px
+}
+
+.node.css74 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css75 .padding {
+  height: 20px
+}
+
+.node.css76 {
+  color: #333;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 5px
+}
+
+.node.css76 a {
+  color: rgb(27, 25, 230)
+}
+
+.metahtml.css77 .spoiler1 {
+  /* background-color: rgb(238, 238, 253); */
+  border: 0px solid rgb(195, 195, 247);
+  color: rgb(6, 6, 43);
+  padding: 0 25px;
+  margin-right: 17px;
+  position: relative;
+}
+
+.metahtml.css77 .spoiler1-header {
+  padding: 15px 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.metahtml.css77 .spoiler1-toggle {
+  position: absolute;
+  top: 10px;
+  right: -17px;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  background-color: rgb(87, 86, 233);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  border: 0px solid rgb(238, 238, 253);
+  transition: transform 0.4s;
+}
+
+.metahtml.css77 .spoiler1-toggle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.4s;
+  opacity: 1;
+}
+
+.metahtml.css77 .spoiler1-toggle.is-collapsed {
+  transform: rotate(180deg);
+}
+
+.metahtml.css77 .spoiler1-toggle.is-collapsed i.fa-minus {
+  opacity: 0;
+}
+
+.metahtml.css77 .spoiler1-toggle.is-expanded i.fa-plus {
+  opacity: 0;
+}
+
+.metahtml.css77 .spoiler1-container {
+  padding: 20px 0;
+  padding-top: 0;
+}
+
+.textable.css78 {
+  text-align: left;
+  font-family: "Montserrat Bold";
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 0em;
+  color: rgb(26, 26, 26);
+  opacity: 1
+}
+
+.screen-xs .textable.css78 {
+  font-size: 18px !important
+}
+
+.node.css79 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 5px
+}
+
+.node.css79 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css80 ul {
+  padding-left: 16px;
+  list-style-type: disc
+}
+
+.node.css80 li {
+  padding-left: 5px
+}
+
+.node.css80 li+li {
+  margin-top: 1em
+}
+
+.textable.css81 {
+  text-align: left;
+  font-family: "PT Sans Caption";
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0em;
+  color: rgb(51, 51, 51);
+  opacity: 1
+}
+
+.node.css82>.wrapper1 {
+  background-color: rgb(255, 248, 223);
+  border-radius: 22px
+}
+
+.node.css82 {
+  color: #333;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+.node.css82 a {
+  color: rgb(230, 185, 25)
+}
+
+.node.css83 {
+  color: #333;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px
+}
+
+.node.css83 a {
+  color: rgb(230, 185, 25)
+}
+
+.node.css84 {
+  color: #333;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 5px
+}
+
+.node.css84 a {
+  color: rgb(230, 185, 25)
+}
+
+.metahtml.css85 .spoiler1 {
+  background-color: rgb(255, 248, 223);
+  border: 0px solid rgb(255, 238, 175);
+  color: rgb(48, 37, 0);
+  padding: 0 25px;
+  margin-right: 17px;
+  position: relative;
+}
+
+.metahtml.css85 .spoiler1-header {
+  padding: 15px 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.metahtml.css85 .spoiler1-toggle {
+  position: absolute;
+  top: 10px;
+  right: -17px;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: rgb(87, 86, 233);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  border: 0px solid rgb(255, 248, 223);
+  transition: transform 0.4s;
+}
+
+.metahtml.css85 .spoiler1-toggle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.4s;
+  opacity: 1;
+}
+
+.metahtml.css85 .spoiler1-toggle.is-collapsed {
+  transform: rotate(180deg);
+}
+
+.metahtml.css85 .spoiler1-toggle.is-collapsed i.fa-minus {
+  opacity: 0;
+}
+
+.metahtml.css85 .spoiler1-toggle.is-expanded i.fa-plus {
+  opacity: 0;
+}
+
+.metahtml.css85 .spoiler1-container {
+  padding: 20px 0;
+  padding-top: 0;
+}
+
+.node.css86 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 5px
+}
+
+.node.css86 a {
+  color: rgb(230, 185, 25)
+}
+
+.node.css87 ul {
+  padding-left: 16px;
+  list-style-type: disc
+}
+
+.node.css87 li {
+  padding-left: 5px
+}
+
+.node.css87 li+li {
+  margin-top: 0.99em
+}
+
+.node.css88>.wrapper1 {
+  background-color: rgb(224, 237, 255);
+  border-radius: 22px
+}
+
+.node.css88 {
+  color: #333;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+.node.css88 a {
+  color: rgb(25, 111, 230)
+}
+
+.node.css89 {
+  color: #333;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px
+}
+
+.node.css89 a {
+  color: rgb(25, 111, 230)
+}
+
+.node.css90 {
+  color: #333;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 5px
+}
+
+.node.css90 a {
+  color: rgb(25, 111, 230)
+}
+
+.metahtml.css91 .spoiler1 {
+  background-color: rgb(224, 237, 255);
+  border: 0px solid rgb(176, 209, 255);
+  color: rgb(0, 20, 48);
+  padding: 0 25px;
+  margin-right: 17px;
+  position: relative;
+}
+
+.metahtml.css91 .spoiler1-header {
+  padding: 15px 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.metahtml.css91 .spoiler1-toggle {
+  position: absolute;
+  top: 10px;
+  right: -17px;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: rgb(87, 86, 233);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  border: 0px solid rgb(224, 237, 255);
+  transition: transform 0.4s;
+}
+
+.metahtml.css91 .spoiler1-toggle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.4s;
+  opacity: 1;
+}
+
+.metahtml.css91 .spoiler1-toggle.is-collapsed {
+  transform: rotate(180deg);
+}
+
+.metahtml.css91 .spoiler1-toggle.is-collapsed i.fa-minus {
+  opacity: 0;
+}
+
+.metahtml.css91 .spoiler1-toggle.is-expanded i.fa-plus {
+  opacity: 0;
+}
+
+.metahtml.css91 .spoiler1-container {
+  padding: 20px 0;
+  padding-top: 0;
+}
+
+.node.css92 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 5px
+}
+
+.node.css92 a {
+  color: rgb(25, 111, 230)
+}
+
+.node.css93 {
+  color: #333;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.screen-xs .node.css93 {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important
+}
+
+.node.css93 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css94 {
+  color: #333;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.screen-xs .node.css94 {
+  padding-top: 10px !important
+}
+
+.node.css94 a {
+  color: rgb(27, 25, 230)
+}
+
+.btn.css95 {
+  text-align: center
+}
+
+.btn.css95 {
+  background-color: rgba(87, 86, 233, 0);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-style: solid;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-color: rgb(87, 86, 233);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(0, 0, 0) !important;
+}
+
+.btn.css95:hover,
+.btn.css95.hover {
+  background-color: rgb(87, 86, 233);
+  border-color: rgb(87, 86, 233);
+  color: rgb(255, 255, 255) !important;
+}
+
+.btn.css95:active,
+.btn.css95.active {
+  background-color: rgb(87, 86, 233);
+  border-color: rgb(87, 86, 233);
+  color: rgb(255, 255, 255) !important;
+}
+
+.btn.css95:before {}
+
+.btn.css95:active:before,
+.btn.css95.active:before {
+  background-color: rgb(87, 86, 233);
+}
+
+.node.css96 .s-elements-cell {
+  width: 33.333333333333336%
+}
+
+.node.css96 .s-elements-grid {
+  margin: 0 -0px
+}
+
+.node.css96 .s-elements-cellwrapper {
+  padding: 0px 0px
+}
+
+.screen-sm .node.css96 .s-elements-cell {
+  width: 100% !important
+}
+
+.screen-xs .node.css96 .s-elements-cell {
+  width: 100% !important
+}
+
+.textable.css97 {
+  text-align: center;
+  font-family: "Montserrat Bold";
+  font-size: 56px;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  color: rgb(51, 51, 51);
+  opacity: 1
+}
+
+.screen-xs .textable.css97 {
+  font-size: 40px !important
+}
+
+.node.css98 {
+  color: #333;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css98 a {
+  color: rgb(27, 25, 230)
+}
+
+.textable.css99 {
+  text-align: center;
+  font-family: "PT Sans Caption";
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0em;
+  color: rgb(153, 153, 153);
+  opacity: 1
+}
+
+.screen-xs .textable.css99 {
+  text-align: center !important
+}
+
+.node.css100 {
+  color: #333;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px
+}
+
+.node.css100>.wrapper1 {
+  border-radius: 6px
+}
+
+.node.css100 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css101 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.node.css101 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css102>.zero-grid {
+  height: 171px
+}
+
+.zero-layer.css103>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 8;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css103>.zero-layer-axis {
+  height: 171px
+}
+
+.zero-layer.css103>.zero-layer-axis>.zero-layer-frame {
+  left: 0px;
+  top: 0px;
+  width: 176.47px
+}
+
+.screen-xs .zero-layer.css103>.zero-layer-axis>.zero-layer-frame {
+  left: 0px !important
+}
+
+.zero-layer.css104>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 9;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css104>.zero-layer-axis {
+  height: 171px
+}
+
+.zero-layer.css104>.zero-layer-axis>.zero-layer-frame {
+  left: 0px;
+  top: -9.5px;
+  width: 76.92px
+}
+
+.screen-xs .zero-layer.css104>.zero-layer-axis>.zero-layer-frame {
+  left: 0px !important
+}
+
+.zero-layer.css105>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 10;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css105>.zero-layer-axis {
+  height: 171px
+}
+
+.zero-layer.css105>.zero-layer-axis>.zero-layer-frame {
+  left: 30px;
+  top: 10px;
+  width: 50px;
+  height: 50px
+}
+
+.screen-sm .zero-layer.css105>.zero-layer-axis>.zero-layer-frame {
+  left: -88.24px !important
+}
+
+.screen-xs .zero-layer.css105>.zero-layer-axis>.zero-layer-frame {
+  left: -88.24px !important
+}
+
+.zero-layer.css106>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 8;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css106>.zero-layer-axis {
+  height: 100%
+}
+
+.zero-layer.css106>.zero-layer-axis>.zero-layer-frame {
+  left: 0px;
+  top: 0px;
+  width: 50px
+}
+
+.zero-layer.css107>.zero-layer-axis>.zero-layer-frame>.textable {
+  z-index: 9;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css107>.zero-layer-axis {
+  height: 100%
+}
+
+.zero-layer.css107>.zero-layer-axis>.zero-layer-frame {
+  left: 5px;
+  top: 0px;
+  width: 20px
+}
+
+.textable.css108 {
+  text-align: left;
+  font-family: "PT Sans Caption";
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0em;
+  color: rgb(255, 255, 255);
+  opacity: 1
+}
+
+.node.css109 {
+  color: #333;
+  padding-top: 1px;
+  padding-bottom: 25px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css109 a {
+  color: rgb(27, 25, 230)
+}
+
+.textable.css110 {
+  text-align: center;
+  font-family: "PT Sans Caption";
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  color: rgb(153, 153, 153);
+  opacity: 1
+}
+
+.screen-xs .textable.css110 {
+  text-align: center !important
+}
+
+.zero-layer.css111>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 9;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css111>.zero-layer-axis {
+  height: 171px
+}
+
+.zero-layer.css111>.zero-layer-axis>.zero-layer-frame {
+  left: 30px;
+  top: 10px;
+  width: 50px;
+  height: 50px
+}
+
+.screen-sm .zero-layer.css111>.zero-layer-axis>.zero-layer-frame {
+  left: -85.73px !important
+}
+
+.screen-xs .zero-layer.css111>.zero-layer-axis>.zero-layer-frame {
+  left: -85.73px !important
+}
+
+.zero-layer.css112>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 8;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css112>.zero-layer-axis {
+  height: 171px
+}
+
+.zero-layer.css112>.zero-layer-axis>.zero-layer-frame {
+  left: 0px;
+  top: 0px;
+  width: 171.45px
+}
+
+.zero-layer.css113>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 8;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css113>.zero-layer-axis {
+  height: 171px
+}
+
+.zero-layer.css113>.zero-layer-axis>.zero-layer-frame {
+  left: 30px;
+  top: 10px;
+  width: 50px;
+  height: 50px
+}
+
+.screen-sm .zero-layer.css113>.zero-layer-axis>.zero-layer-frame {
+  left: -84.63px !important
+}
+
+.screen-xs .zero-layer.css113>.zero-layer-axis>.zero-layer-frame {
+  left: -84.63px !important
+}
+
+.zero-layer.css114>.zero-layer-axis>.zero-layer-frame>.textable {
+  z-index: 9;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css114>.zero-layer-axis {
+  height: 100%
+}
+
+.zero-layer.css114>.zero-layer-axis>.zero-layer-frame {
+  left: 4px;
+  top: 0px;
+  width: 20px
+}
+
+.zero-layer.css115>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 9;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css115>.zero-layer-axis {
+  height: 171px
+}
+
+.zero-layer.css115>.zero-layer-axis>.zero-layer-frame {
+  left: -13.73px;
+  top: 0px;
+  width: 219.27px
+}
+
+.screen-sm .zero-layer.css115>.zero-layer-axis>.zero-layer-frame {
+  left: 0px !important
+}
+
+.screen-xs .zero-layer.css115>.zero-layer-axis>.zero-layer-frame {
+  left: 0px !important
+}
+
+.node.css116 .s-elements-cell {
+  width: 33.333333333333336%
+}
+
+.node.css116 .s-elements-grid {
+  margin: 0 -15px
+}
+
+.node.css116 .s-elements-cellwrapper {
+  padding: 20px 15px
+}
+
+.screen-sm .node.css116 .s-elements-cell {
+  width: 100% !important
+}
+
+.screen-sm .node.css116 .s-elements-cellwrapper {
+  padding-left: 15px !important;
+  padding-right: 15px !important
+}
+
+.screen-xs .node.css116 .s-elements-cell {
+  width: 100% !important
+}
+
+.node.css117 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css117 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css118 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.screen-xs .node.css118 {
+  padding-left: 30px !important
+}
+
+.node.css118 a {
+  color: rgb(27, 25, 230)
+}
+
+.metahtml.css119 .outer {
+  position: relative;
+  text-align: left;
+}
+
+.metahtml.css119 .inner {
+  display: inline-block;
+}
+
+.metahtml.css119 .inner:after {
+  content: '';
+  display: block;
+  height: 26px;
+  margin-top: -27px;
+  background-image: linear-gradient(to right, rgb(188, 187, 246), rgb(238, 238, 253));
+}
+
+.textable.css120 {
+  text-align: center;
+  font-family: "Montserrat Bold";
+  font-size: 56px;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  color: rgb(51, 51, 51);
+  opacity: 1
+}
+
+.screen-sm .textable.css120 {
+  text-align: left !important
+}
+
+.screen-xs .textable.css120 {
+  text-align: center !important;
+  font-size: 40px !important
+}
+
+.node.css121 {
+  color: #333;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css121 a {
+  color: rgb(27, 25, 230)
+}
+
+.textable.css122 {
+  text-align: left;
+  font-family: "PT Sans Caption";
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 0em;
+  color: rgb(153, 153, 153);
+  opacity: 1
+}
+
+.screen-xs .textable.css122 {
+  text-align: center !important
+}
+
+.node.css123>.zero-grid {
+  height: 200px
+}
+
+.screen-xs .node.css123>.zero-grid {
+  height: 100px !important
+}
+
+.zero-layer.css124>.zero-layer-axis>.zero-layer-frame>.cont {
+  z-index: 8;
+  transform: scale(1, 1)
+}
+
+.zero-layer.css124>.zero-layer-axis {
+  height: 200px
+}
+
+.zero-layer.css124>.zero-layer-axis>.zero-layer-frame {
+  left: 0px;
+  top: 0px;
+  width: 481.43px
+}
+
+.screen-sm .zero-layer.css124>.zero-layer-axis>.zero-layer-frame {
+  left: 2.5px !important;
+  top: 12.5px !important;
+  width: 300px !important
+}
+
+.screen-xs .zero-layer.css124>.zero-layer-axis {
+  height: 100px !important
+}
+
+.screen-xs .zero-layer.css124>.zero-layer-axis>.zero-layer-frame {
+  left: 0px !important;
+  top: 0px !important;
+  width: 325.72px !important
+}
+
+.node.css125 {
+  color: #333;
+  padding-top: 71px;
+  padding-bottom: 71px;
+  padding-left: 41px;
+  padding-right: 41px
+}
+
+.node.css125>.wrapper1 {
+  border-radius: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204)
+}
+
+.node.css125 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css126 img {
+  width: calc(0.09 * var(--width))
+}
+
+.node.css126 .bgnormal {
+  text-align: left
+}
+
+.screen-xs .node.css126 .bgnormal {
+  text-align: center !important
+}
+
+.node.css127 {
+  color: #333;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css127 a {
+  color: rgb(27, 25, 230)
+}
+
+.textable.css128 {
+  text-align: left;
+  font-family: "Montserrat";
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: 0em;
+  color: rgb(26, 26, 26);
+  opacity: 1
+}
+
+.screen-xs .textable.css128 {
+  text-align: center !important
+}
+
+.node.css129 {
+  color: #333;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css129 a {
+  color: rgb(27, 25, 230)
+}
+
+.textable.css130 {
+  text-align: left;
+  font-family: "PT Sans Caption";
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0em;
+  color: rgb(153, 153, 153);
+  opacity: 1
+}
+
+.screen-xs .textable.css130 {
+  text-align: center !important
+}
+
+.node.css131 {
+  color: #333;
+  padding-top: 101px;
+  padding-bottom: 101px;
+  padding-left: 41px;
+  padding-right: 41px
+}
+
+.node.css131>.wrapper1 {
+  border-radius: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204)
+}
+
+.node.css131 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css132 {
+  color: #333;
+  padding-top: 41px;
+  padding-bottom: 41px;
+  padding-left: 41px;
+  padding-right: 41px
+}
+
+.node.css132>.wrapper1 {
+  border-radius: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204)
+}
+
+.node.css132 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css133>.wrapper1 {
+  background-color: white
+}
+
+.node.css133 {
+  color: #333
+}
+
+.node.css133>.padding_top {
+  padding-top: 80px
+}
+
+.screen-sm .node.css133>.padding_top {
+  padding-top: 60px !important
+}
+
+.screen-xs .node.css133>.padding_top {
+  padding-top: 40px !important
+}
+
+.node.css133>.padding_bottom {
+  padding-bottom: 80px
+}
+
+.screen-sm .node.css133>.padding_bottom {
+  padding-bottom: 60px !important
+}
+
+.screen-xs .node.css133>.padding_bottom {
+  padding-bottom: 40px !important
+}
+
+.node.css133 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css134 .s-elements-cell {
+  width: 33.333333333333336%
+}
+
+.node.css134 .s-elements-grid {
+  margin: 0 -10px
+}
+
+.node.css134 .s-elements-cellwrapper {
+  padding: 20px 10px
+}
+
+.screen-md .node.css134 .s-elements-cell {
+  width: 33.333333333333336% !important
+}
+
+.screen-sm .node.css134 .s-elements-cell {
+  width: 100% !important
+}
+
+.screen-xs .node.css134 .s-elements-cell {
+  width: 100% !important
+}
+
+.textable.css135 {
+  text-align: center;
+  font-family: "Montserrat Bold";
+  font-size: 56px;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  color: rgb(26, 26, 26);
+  opacity: 1
+}
+
+.screen-xs .textable.css135 {
+  font-size: 40px !important
+}
+
+.textable.css136 {
+  text-align: center;
+  font-family: "PT Sans Caption";
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 0em;
+  color: rgb(153, 153, 153);
+  opacity: 1
+}
+
+.screen-xs .textable.css136 {
+  text-align: center !important
+}
+
+.node.css137>.wrapper1 {
+  background-color: rgb(238, 238, 253);
+  border-radius: 30px
+}
+
+.node.css137 {
+  color: #333;
+  padding-top: 68px;
+  padding-bottom: 68px;
+  padding-left: 50px;
+  padding-right: 50px
+}
+
+.screen-xs .node.css137 {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important
+}
+
+.screen-sm .node.css137 {
+  padding-left: 50px !important;
+  padding-right: 50px !important
+}
+
+.node.css137 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css138 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css138 a {
+  color: rgb(27, 25, 230)
+}
+
+.textable.css139 {
+  text-align: left;
+  font-family: "PT Sans Caption";
+  font-size: 34px;
+  line-height: 1.6;
+  letter-spacing: 0em;
+  opacity: 1
+}
+
+.textable.css140 {
+  text-align: left;
+  font-family: "Montserrat Bold";
+  font-size: 36px;
+  line-height: 0.9;
+  letter-spacing: 0.022857142857142857em;
+  color: rgb(26, 26, 26);
+  opacity: 1
+}
+
+.screen-xs .textable.css140 {
+  text-align: left !important;
+  font-size: 36px !important
+}
+
+.textable.css141 {
+  text-align: left;
+  font-family: "Montserrat Bold";
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0em;
+  color: rgb(26, 26, 26);
+  opacity: 1
+}
+
+.textable.css142 {
+  text-align: left;
+  font-family: "PT Sans Caption";
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0em;
+  color: rgb(26, 26, 26);
+  opacity: 1
+}
+
+.btn.css143 {
+  text-align: center
+}
+
+.btn.css143 {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-style: solid;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-color: rgb(204, 204, 204);
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(87, 86, 233) !important;
+}
+
+.btn.css143:hover,
+.btn.css143.hover {
+  background-color: rgb(238, 238, 253);
+  border-color: rgb(255, 255, 255);
+  color: rgb(37, 34, 186) !important;
+}
+
+.btn.css143:active,
+.btn.css143.active {
+  background-color: rgb(195, 195, 247);
+  border-color: rgb(152, 151, 241);
+  color: rgb(0, 0, 0) !important;
+}
+
+.btn.css143:before {}
+
+.btn.css143:active:before,
+.btn.css143.active:before {
+  background-color: rgb(195, 195, 247);
+}
+
+.node.css144>.wrapper1 {
+  background-color: rgb(87, 86, 233);
+  border-radius: 30px;
+  box-shadow: 0px 14px 17px 1px rgba(87, 86, 233, 0.2)
+}
+
+.node.css144 {
+  color: #FFF;
+  padding-top: 68px;
+  padding-bottom: 68px;
+  padding-left: 50px;
+  padding-right: 50px
+}
+
+.screen-xs .node.css144 {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important
+}
+
+.screen-sm .node.css144 {
+  padding-left: 50px !important;
+  padding-right: 50px !important
+}
+
+.node.css144 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css145 {
+  color: #FFF;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css145 a {
+  color: rgb(27, 25, 230)
+}
+
+.textable.css146 {
+  text-align: left;
+  font-family: "Montserrat Bold";
+  font-size: 36px;
+  line-height: 0.9;
+  letter-spacing: 0.022857142857142857em;
+  opacity: 1
+}
+
+.screen-xs .textable.css146 {
+  text-align: left !important;
+  font-size: 36px !important
+}
+
+.node.css147 {
+  color: #FFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css147 a {
+  color: rgb(27, 25, 230)
+}
+
+.textable.css148 {
+  text-align: left;
+  font-family: "Montserrat Bold";
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0em;
+  opacity: 1
+}
+
+.node.css149 {
+  color: #FFF;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px
+}
+
+.node.css149 a {
+  color: rgb(27, 25, 230)
+}
+
+.node.css150 {
+  color: #FFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 5px
+}
+
+.node.css150 a {
+  color: rgb(27, 25, 230)
+}
+
+.textable.css151 {
+  text-align: left;
+  font-family: "PT Sans Caption";
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0em;
+  opacity: 1
+}
+
+.node.css152>.wrapper1 {
+  background-color: rgb(255, 248, 223);
+  border-radius: 30px
+}
+
+.node.css152 {
+  color: #333;
+  padding-top: 68px;
+  padding-bottom: 68px;
+  padding-left: 50px;
+  padding-right: 50px
+}
+
+.screen-xs .node.css152 {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important
+}
+
+.screen-sm .node.css152 {
+  padding-left: 50px !important;
+  padding-right: 50px !important
+}
+
+.node.css152 a {
+  color: rgb(230, 185, 25)
+}
+
+.node.css153 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css153 a {
+  color: rgb(230, 185, 25)
+}
+
+.node.css154 {
+  color: #333;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.node.css154 a {
+  color: rgb(230, 185, 25)
+}
+
+.textable.css155 {
+  text-align: left;
+  font-family: "Montserrat Bold";
+  font-size: 31px;
+  line-height: 0.9;
+  letter-spacing: 0.022857142857142857em;
+  color: rgb(26, 26, 26);
+  opacity: 1
+}
+
+.screen-xs .textable.css155 {
+  text-align: left !important;
+  font-size: 28px !important
+}
+
+.node.css156 {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+.dropdaunM {
+  position: relative;
+  animation-timing-function: ease;
+  }
+
+.dropdaunMT{
+  transition: 1s;
+  height: 0;
+  animation: timingminus .5s;
+  animation-timing-function: ease;
+  overflow: hidden;
+}
+  
+.dropdaunMT.on{
+  display: block;
+  height: 0px;
+  animation: timing .5s;
+  animation-fill-mode: forwards;
+  }
+
+  .skyscraper{
+    width: 100vw;
+    height: 95vh;
+    padding-top: 50px;
+    background-image: url("./img/skyscraper.jpg");
+    position: relative;
+  }
+  .englishCaerd {
+    text-decoration: none;
+    will-change: transform;
+    transition: transform 450ms;
+    
+  }
+  
+  .englishCaerd:hover{
+    background-color: #FFF8DFFF;
+    transition: transform 150ms;
+    transform: translateY(-15px);
+    transition: background-color 700ms ease-in;
+  }
+  .answerOptions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .radioCustomButton {
+    position: absolute;
+    width: auto;
+    opacity: 0;
+  }
+  
+  .radioCustomButton,
+  .radioCustomLabel {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  .radioCustomLabel {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem 2.5rem 1.5rem 5rem;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .radioCustomButton ~ .radioCustomLabel:before {
+    position: absolute;
+    top: 20px;
+    left: 38px;
+    width: 28px;
+    height: 28px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  
+  .radioCustomButton:checked ~ .radioCustomLabel:before {
+    content: '';
+    background: #8bc53f url(./img/icon-check.svg) no-repeat;
+    background-size: 27px;
+    border-color: #8bc53f;
+  }
+  
+  @keyframes timing {
+    100%{
+      height: 300px;
+      /* margin-left: -5.6em; */
+    }
+  }
+  @keyframes timingminus {
+    0%{
+      height: 300px;
+    }}
+
+    .online_corss_img{
+      max-width: 490px;
+    }
+    .englishImg{
+      border-radius: 20px
+    }
+    @media (max-width: 1399px){
+      .englishImg{
+        max-width: 280px;
+      }
+    }
+@media (max-width: 992px){
+  .englishCaerd:hover{
+    transform: translateY(0px);
+  }
+  .englishImg{
+    max-width: 380px;
+  }
+  .textable.css46{
+    font-size: 38px 
+  }
+  .textable.img{
+    width: 365px;
+  }
+  
+  .online_corss_img{
+    max-width: 290px;
+  }
+
+}
+
+.area.screen-sm .container.soft {
+  max-width: 700px;
+}
+
+.area.screen-xs .container {
+  max-width: 717px;
+  padding: 0 0px;
+}

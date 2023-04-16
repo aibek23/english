@@ -1,0 +1,6 @@
+{
+  "port": 5000,
+  "jwtSecret": "azim",
+  "mongoUri": "mongodb+srv://root:root@cluster0.4oncult.mongodb.net/?retryWrites=true&w=majority",
+  "baseUrl": "http://localhost:5000"
+}

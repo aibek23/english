@@ -1,0 +1,31 @@
+.contain{
+    width: 100%;
+    background-image:url("https://hellolanguage.ru/wp-content/uploads/2020/10/nemeczkij-yazyk-1.jpg");
+}
+.rows{
+    padding: 0 15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+    width: 100%;
+    height: 90vh;
+    color: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.5068528632155987) 0%, rgba(133,217,245,0.6665167287618172) 29%, rgb(28, 127, 179) 100%)
+}
+.title{
+    color: rgb(255,255,255);
+    font-size: 60px;
+}
+.title_caunt{
+
+    font-size: 25px;
+    font-weight:bold;
+}
+.auth_cont{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    background-color:#E7B252;
+}
