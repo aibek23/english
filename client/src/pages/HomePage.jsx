@@ -30,21 +30,26 @@ export const HomePage = () => {
   const [spoiler2, setSpoiler2] = useState(false)
   const [spoiler3, setSpoiler3] = useState(false)
   return (<div className="container">
-    <div className="container mb-5">
-      <div className="row align-items-center mb-5">
-        <div className="col-md-6">
+    <div className="" style={{"width":"100%"}} >
+      <div className="row align-items-center mb-5 mt-5">
+        <div className="col-md-6 mt-5">
           <div className="node widget-metahtml widget css44">
             <div className="metahtml css45">
               <div className="outer">
                 <div className="inner">
-                  <h2 className="textable css46">Курсы технического английского языка.</h2>
+                  <h2 className="textable css46">Курсы технического английского языка</h2>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-md-6 ">
-          <img src={titlieImg} className="textable img" style={{ "maxWidth": "45vw" }} alt="" />
+        <div className="col-md-6 mt-5 title">
+          <div className="title_text">
+          {/* <h4 className="" style={{ "maxWidth": "45vw" }}>Определить уровень <br/>английского языка</h4> */}
+          <Link to={"/test/level"} className="title_text_btn btn btn-danger">пройди тест</Link>
+          </div>
+          
+          <img src={titlieImg} className="textable img"  alt="" />
         </div>
       </div>
       <div className="" style={{ "marginTop": "100px" }}>

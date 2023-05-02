@@ -55,7 +55,6 @@ router.post(
   async (req, res) => {
   try {
     const errors = validationResult(req)
-    console.log(req)
     if (!errors.isEmpty()) {
       return res.status(400).json({
         errors: errors.array(),
@@ -83,7 +82,7 @@ router.post(
       { expiresIn: '1000000h' }
     )
 
-    res.json({ token, email: user.email, user:user.username })
+    res.json({ token, email: user.email, user:user.username,surname:user.surname,phnumber:user.phnumber,data:user.date })
 
   } catch (e) {
     console.log(e)

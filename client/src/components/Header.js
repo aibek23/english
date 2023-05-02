@@ -28,24 +28,26 @@ export const Header = (props) => {
     });
   }, [isAuthenticated]);
   return (
+<div style={{ "backgroundColor": "#636175FF" ,"width":"100%"}}>
+  
 
-    <div className='container'>
-      <Navbar variant="white" expand="lg" sticky="top" style={{ "backgroundColor": "white" }}>
+    <div className='container' >
+      <Navbar variant="dark" expand="lg" sticky="top" style={{ "backgroundColor": "#636175FF" }}>
         <div className='container'>
           <Navbar.Brand href="/"><div className="grid valign-middle paddings-20px">
             <div className="d-flex align-items-center">
               <div className="col" style={{ "width": "81px" }}>
                 <div className="cont">
                   <div className="node widget-image widget css4 css5"  >
-                    <div className="bgnormal"><img className="" alt="" src={faviconPng} style={{ "maxWidth": "61px","borderRight": "4px solid rgba(87, 86, 233, 0.5)", "left": "-2px"  }} /></div>
+                    <div className="bgnormal"><img className="" alt="" src={faviconPng} style={{ "maxWidth": "61px", "borderRight": "4px solid rgba(87, 86, 233, 0.5)", "left": "-2px" }} /></div>
 
                   </div>
                 </div>
               </div>
               <div className="col " style={{ "width": "100%" }}>
                 <div className="d-flex " >
-                <div className=" mr-3  ">
-                  <h1 className=" mr-3  font-weight-bold">Technic Pro</h1></div></div>
+                  <div className=" mr-3  ">
+                    <h1 className=" mr-3  font-weight-bold">Technic Pro</h1></div></div>
               </div>
             </div>
           </div></Navbar.Brand>
@@ -53,12 +55,12 @@ export const Header = (props) => {
 
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
             <Nav >
-              {state.adm?              <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/admin"}>
+              {state.adm ? <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/admin"}>
                 <div className="pad-left" style={{ "width": "6px" }}></div>
                 <div className="btn-content"><span className="text">Админ панель
                 </span></div>
                 <div className="pad-right" style={{ "width": "6px" }}></div>
-              </NavLink>:""}
+              </NavLink> : ""}
 
               <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/"}>
                 <div className="pad-left" style={{ "width": "6px" }}></div>
@@ -83,19 +85,19 @@ export const Header = (props) => {
                 </span></div>
                 <div className="pad-right" style={{ "width": "6px" }}></div>
               </NavLink>
-              {state.authenticated?              <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/test"}>
+              {state.authenticated ? <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/test"}>
                 <div className="pad-left" style={{ "width": "6px" }}></div>
                 <div className="btn-content"><span className="text">Тесты
                 </span></div>
                 <div className="pad-right" style={{ "width": "6px" }}></div>
-              </NavLink>:""}
+              </NavLink> : ""}
 
             </Nav>
             <Nav>
               <NavLink to={"/AuthPage"} className=" btn btn-legacy font-text css14 " style={{ "marginLeft": "5px", "backgroundColor": "rgb(87, 86, 233)" }}>
                 <div className="pad-left" style={{ "width": "42px" }}></div>
                 <div className="btn-content"><span className="text">{
-                state.authenticated?"личный кабинет":"Зарегистрироваться"}
+                  state.authenticated ? "личный кабинет" : "Зарегистрироваться"}
                 </span></div>
                 <div className="pad-right" style={{ "width": "42px" }}></div>
               </NavLink>
@@ -123,6 +125,7 @@ export const Header = (props) => {
 
         </div>
       </Navbar>
+    </div>
     </div>
   )
 }

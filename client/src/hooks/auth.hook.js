@@ -7,12 +7,11 @@ export const useAuth = () => {
   const [ready, setReady] = useState(false)
    const [userEmail, setUserEmail] = useState(null)
 
-  const login = useCallback((jwtToken, useremail, username, checkbox) => {
-    setToken(jwtToken)
-   
+  const login = useCallback((jwtToken, useremail, username,phnumber,surname,date, checkbox) => {
+    setToken(jwtToken)   
     setUserEmail(useremail)
     checkbox&&localStorage.setItem(storageName, JSON.stringify({
-       token: jwtToken, username:username, userEmail:useremail
+       token: jwtToken, username:username, userEmail:useremail , phnumber:phnumber,surname:surname,date:date
     }))
   }, [])
 

@@ -1,144 +1,82 @@
-import React, { useContext } from "react";
-import { Context } from '../context/Context'
-// import skyscraper from '../img/skyscraper(1440x900).jpg'
+import React, {useCallback, useContext, useEffect, useState } from "react";
+import {useHttp} from '../hooks/http.hook'
+import { Context } from '../context/Context';
+import LineChart from "../components/LineChart";
+// import Level_detection from "./test/Level_detection";
+
 export const Personal = () => {
-    const auth = useContext(Context)
+    const {request} = useHttp();
+    const [date, setDate] = useState("");
+    const [userAnswers , setUserAnswers] = useState([]);
+    const [engineer ,  setEngineer] = useState([]);
+    const [it_test , setit_test] = useState([]);
+    const datas = JSON.parse(localStorage.getItem('userData'));
+    const {token} = useContext(Context);
+    const auth = useContext(Context);
+  
+    const fetchLinks = useCallback(async () => {
+        try {
+          const fetched = await request('/api/test/person', 'GET', null, {
+            Authorization: `Bearer ${token}`
+          })
+
+          setUserAnswers(fetched);
+        } catch (e) {}
+      }, [token, request])
+    
+      useEffect(() => {
+        fetchLinks()
+      }, [fetchLinks])
+
     const logoutHandler = event => {
         event.preventDefault()
         auth.logout()
+        localStorage.clear()
+        window.location.reload();
     }
+    useEffect(() => {
+        setDate(new Date(datas.date).toLocaleString())
+    }, [])
     return (
-        <div className="skyscraper">
+        <div className="testbg">
             <div className="container">
-                <div className="col-md-4 bg-white p-4" style={{ "borderRadius": "20px" }} >
-                    <table>
-                        <tbody>
-                            <tr style={{borderBottom: "solid"}}>
-                                <td style={{"padding":"15px"}}>Name:</td>
-                                <td style={{"padding":"15px"}}>John</td>
-                            </tr>
-                            <tr >
-                                <td style={{"padding":"15px"}}>Surname:</td>
-                                <td style={{"padding":"15px"}}>Doe</td>
-                            </tr>
-                            <tr>
-                                <td style={{"padding":"15px"}}>Phone:</td>
-                                <td style={{"padding":"15px"}}>555-1234</td>
-                            </tr>
-                            <tr>
-                                <td style={{"padding":"15px"}}>Date of Creation:</td>
-                                <td style={{"padding":"15px"}}>2022-02-15</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button className="btn  btn-danger" style={{"margin":"15px"}} onClick={(e) => logoutHandler(e)}>выйти</button>
+                <div className="row justify-content-between" style={{ "alignContent": "flex-start" }}>
+                    <div className="col-md-4 bg-white p-4 mb-4" style={{ "borderRadius": "20px", "maxHeight": "380px" }} >
+                        <table>
+                            <tbody>
+                                <tr style={{ borderBottom: "solid" }}>
+                                    <td style={{ "padding": "15px" }}>Name:</td>
+                                    <td style={{ "padding": "15px" }}>{datas.username}</td>
+                                </tr>
+                                <tr >
+                                    <td style={{ "padding": "15px" }}>Surname:</td>
+                                    <td style={{ "padding": "15px" }}>{datas.surname}</td>
+                                </tr>
+                                <tr>
+                                    <td style={{ "padding": "15px" }}>Phone:</td>
+                                    <td style={{ "padding": "15px" }}>{datas.phnumber}</td>
+                                </tr>
+                                <tr>
+                                    <td style={{ "padding": "15px" }}>Date of Creation:</td>
+                                    <td style={{ "padding": "15px" }}>{date}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button className="btn  btn-danger" style={{ "margin": "15px" }} onClick={(e) => logoutHandler(e)}>выйти</button>
+                    </div>
+                    <div className="col-md-7 " style={{ "borderRadius": "20px" }} >
+                        <div className="bg-white p-4 " style={{ "borderRadius": "20px", }}>
+                            <LineChart style={{ "height": "750px" }} props={userAnswers} testName={"Level_detection"} title={"грамматика английского языка"} />
+                        </div>
+                        <div className=" bg-white p-4 mt-4" style={{ "borderRadius": "20px" }}>
+                            <LineChart style={{ "width": "750px" }} props={userAnswers} testName={"English_test"} title={"IT английский"} />
+                        </div>
+                        <div className=" bg-white p-4 mt-4" style={{ "borderRadius": "20px" }}>
+                            <LineChart style={{ "width": "750px" }} props={userAnswers} testName={"IT_English_test"} title={"технический английский "} />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     )
 }
-
-//   ,
-//       {
-//         "question": "What is the plural of 'dog'?",
-//         "questionType": "text",
-//         "answers": [
-//           "dogs",
-//           "doges",
-//           "dogos",
-//           "doggies"
-//         ],
-//         "correctAnswer": "1",
-//         "messageForCorrectAnswer": "Correct!",
-//         "messageForIncorrectAnswer": "Incorrect!"
-//       },
-//       {
-//         "question": "What is the correct form of the verb 'to be' in the present tense for 'he'?",
-//         "questionType": "text",
-//         "answers": [
-//           "am",
-//           "is",
-//           "are",
-//           "be"
-//         ],
-//         "correctAnswer": "2",
-//         "messageForCorrectAnswer": "Correct!",
-//         "messageForIncorrectAnswer": "Incorrect!"
-//       },
-//       {
-//         "question": "What is the opposite of 'happy'?",
-//         "questionType": "text",
-//         "answers": [
-//           "sad",
-//           "angry",
-//           "excited",
-//           "tired"
-//         ],
-//         "correctAnswer": "1",
-//         "messageForCorrectAnswer": "Correct!",
-//         "messageForIncorrectAnswer": "Incorrect!"
-//       },
-//       {
-//         "question": "What is the plural of 'cat'?",
-//         "questionType": "text",
-//         "answers": [
-//           "cats",
-//           "cates",
-//           "catos",
-//           "kitties"
-//         ],
-//         "correctAnswer": "1",
-//         "messageForCorrectAnswer": "Correct!",
-//         "messageForIncorrectAnswer": "Incorrect!"
-//       },
-//       {
-//         "question": "What is the correct form of the verb 'to be' in the present tense for 'they'?",
-//         "questionType": "text",
-//         "answers": [
-//           "am",
-//           "is",
-//           "are",
-//           "be"
-//         ],
-//         "correctAnswer": "3",
-//         "messageForCorrectAnswer": "Correct!",
-//         "messageForIncorrectAnswer": "Incorrect!"
-//       },
-//       {
-//         "question": "Which of the following is not a fruit?",
-//         "questionType": "text",
-//         "answers": [
-//           "apple",
-//           "banana",
-//           "carrot",
-//           "orange"
-//         ],
-//         "correctAnswer": "3",
-//         "messageForCorrectAnswer": "Correct!",
-//         "messageForIncorrectAnswer": "Incorrect!"
-//       },{
-//         "question": "What is the correct form of the verb 'to be' in the present tense for 'I'?",
-//         "questionType": "text",
-//         "answers": [
-//           "am",
-//           "is",
-//           "are",
-//           "be"
-//         ],
-//         "correctAnswer": "1",
-//         "messageForCorrectAnswer": "Correct!",
-//         "messageForIncorrectAnswer": "Incorrect!"
-//       },
-//       {
-//         "question": "What is the plural of 'child'?",
-//         "questionType": "text",
-//         "answers": [
-//           "childs",
-//           "childrens",
-//           "childes",
-//           "children"
-//         ],
-//         "correctAnswer": "4",
-//         "messageForCorrectAnswer": "Correct!",
-//         "messageForIncorrectAnswer": "Incorrect!"
-//       }

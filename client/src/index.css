@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 body {
+   /* background: linear-gradient(to bottom, rgb(215, 223, 93), white);  */
+  
+  
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -90,7 +93,19 @@ code {
 .node.css6 a {
   color: rgb(27, 25, 230)
 }
+.title_text{
+  width: 45vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+}
+.title_text_btn{
+  height: 50px;
+  /* margin-top: 70px; */
+  /* position: absolute; */
 
+}
 .textable.css7 {
   text-align: left;
   font-family: "Montserrat Bold";
@@ -165,7 +180,7 @@ code {
 .btn.css10.active {
   background-color: rgba(59, 58, 229, 0);
   border-color: rgb(87, 86, 233);
-  color: rgb(87, 86, 233) !important;
+  color: rgb(254, 254, 255) !important;
 }
 
 .btn.css10:before {}
@@ -3945,14 +3960,43 @@ code {
   animation: timing .5s;
   animation-fill-mode: forwards;
   }
-
+  /* body {
+    background-image: url("./img/skyscraper.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+  } */
   .skyscraper{
-    width: 100vw;
+    width: 98.8vw;
     height: 95vh;
     padding-top: 50px;
     background-image: url("./img/skyscraper.jpg");
-    position: relative;
+    background-attachment: fixed, fixed;
+    /* position: fixed; */
+    /* position: relative; */
   }
+  .testbg{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("./img/skyscraper.jpg");
+    background-attachment: fixed;
+    /* background-attachment: fixed, fixed; */
+    /* position: fixed; */
+    /* position: relative; */
+  }
+ .skyscraperTest{
+  /* width: 98.8vw; */
+  background-image: url("./img/skyscraper.jpg");
+  background-attachment: fixed;
+  /* position: fixed; */
+  /* position: relative; */
+}
+.skyscraperTestW{
+
+  background-color: rgba(245, 242, 242, 0.538);
+  background-attachment: fixed;
+}
+
   .englishCaerd {
     text-decoration: none;
     will-change: transform;
@@ -4014,6 +4058,34 @@ code {
     background-size: 27px;
     border-color: #8bc53f;
   }
+.checked ~ .radioCustomLabel:before {
+    content: '';
+    background: #8bc53f url(./img/icon-check.svg) no-repeat;
+    background-size: 27px;
+    border-color: #8bc53f;
+  }
+
+  .radioCustomButton.userFalse ~ .radioCustomLabel:before {
+    content: '';
+    background: #c53f3f url(./img/minus.png) no-repeat;
+    background-size: 27px;
+    border-color: #c53f3f;
+  }
+  .radioCustomButton.userTrue ~ .radioCustomLabel:before {
+    content: '';
+    background: #8bc53f url(./img/icon-check.svg) no-repeat;
+    background-size: 27px;
+    border-color: #eff1ec;
+  }
+  .userTrue{
+    background-color: #8bc53f;
+  }
+.userFalse{
+    background-color: #c53f3f70;
+  }
+  /* .showScore-div{
+    background-color: #f9f9f9f6;
+  } */
   
   @keyframes timing {
     100%{
@@ -4037,6 +4109,9 @@ code {
         max-width: 280px;
       }
     }
+    .title img{
+      max-width: 45vw
+    }
 @media (max-width: 992px){
   .englishCaerd:hover{
     transform: translateY(0px);
@@ -4055,6 +4130,14 @@ code {
     max-width: 290px;
   }
 
+}
+@media (max-width: 765px){
+  .textable.img{
+    width: 100%!important
+  }
+  .title img{
+    max-width: 100%!important
+  }
 }
 
 .area.screen-sm .container.soft {
