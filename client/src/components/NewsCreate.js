@@ -20,19 +20,22 @@ const NewsCreate = () => {
     }
     const createHandler = useCallback(async () => {
         try {
-            if (title && description && content && author && file) {
-                console.log(file)
+            // title && description && content && author && 
+            if (file) {
+
+
                 const formData = new FormData();
-                formData.append('image', file);
+                // formData.append('image', file);
 
                 // Add other fields to the form data
-                formData.append('title', title);
-                formData.append('description', description);
-                formData.append('content', content);
-                formData.append('author', author);
-                const data = await request('/api/news/save', 'POST', formData, {
+                formData.append('image', "edcw");
+                console.log(formData);
+                // formData.append('description', description);
+                // formData.append('content', content);
+                // formData.append('author', author);
+                const data = await request('/api/news/save', 'POST', formData , {
                     Authorization: `Bearer ${auth.token}`
-                  });
+                });
                 // const data = await request('/api/news/save', 'POST', {
                 //     image: file,
                 //     title: title,
