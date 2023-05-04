@@ -2,10 +2,15 @@ import React, { useCallback, useContext, useEffect, useState, useRef } from "rea
 import { useHttp } from '../hooks/http.hook'
 import { Context } from '../context/Context';
 import Input from "./input/Input";
+import axios from 'axios';
 const ImageThumb = ({ image }) => {
     return <img src={URL.createObjectURL(image)} alt={image.name} />;
 };
 const NewsCreate = () => {
+    const [userInfo, setuserInfo] = useState({
+        file:[],
+        filepreview:null,
+    });
     const { request } = useHttp();
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
@@ -17,25 +22,62 @@ const NewsCreate = () => {
     const ref = useRef();
     function imghandleUpload(event) {
         setFile(event.target.files[0]);
+        setuserInfo({
+            ...userInfo,
+            file:event.target.files[0],
+            filepreview:URL.createObjectURL(event.target.files[0]),
+            });
     }
     const createHandler = useCallback(async () => {
         try {
+            
+            const formdata = new FormData() 
+            formdata.append('avatar', userInfo.file);
+            console.log(userInfo.file);
+            // formData.append('image', file);
+            // Add other fields to the form data
+            // formData.append('news', "edcw");
+            // formData.append('description', description);
+            // formData.append('content', content);
+            // formData.append('author', author);
+
+            axios.post('http://localhost:5000/api/news/save',formdata ,{   
+                headers: { "Content-Type": "multipart/form-data" } 
+            })
+            .then(res => { // then print response status
+                console.warn(res);
+                if(res.data.success === 1){
+                    
+                }
+    
+    
+            })
+             
+    
+         
+            
+      
+            // if (!response.ok) {
+            //   throw new Error(data.message || 'Что-то пошло не так')
+            // }
+  
             // title && description && content && author && 
             if (file) {
+                
 
+                // const formdata = new FormData() 
+                // formdata.append('avatar', userInfo.file);
+                // // formData.append('image', file);
 
-                const formData = new FormData();
-                // formData.append('image', file);
-
-                // Add other fields to the form data
-                formData.append('image', "edcw");
-                console.log(formData);
-                // formData.append('description', description);
-                // formData.append('content', content);
-                // formData.append('author', author);
-                const data = await request('/api/news/save', 'POST', formData , {
-                    Authorization: `Bearer ${auth.token}`
-                });
+                // // Add other fields to the form data
+                // // formData.append('news', "edcw");
+                // // formData.append('description', description);
+                // // formData.append('content', content);
+                // // formData.append('author', author);
+                // const data = await request('/api/news/save', 'POST', formdata , {
+                //     "Content-Type": "multipart/form-data",
+                //     Authorization: `Bearer ${auth.token}`
+                // });
                 // const data = await request('/api/news/save', 'POST', {
                 //     image: file,
                 //     title: title,
@@ -46,7 +88,7 @@ const NewsCreate = () => {
                 //     'Content-Type': 'application/json',
                 //     Authorization: `Bearer ${auth.token}`
                 // });
-                console.log(data);
+                // console.log(data);
             } else {
                 console.log(";;;;;;;;;;;;;;;;;;;;;;;;;;");
                 console.error('One or more variables are undefined.');
@@ -69,7 +111,7 @@ const NewsCreate = () => {
                             color: "#566885",
                             fontWeight: 700
                         }}>Загрузите изображение</label>
-                        <input onChange={imghandleUpload} type="file" ref={ref} accept="image/png, image/jpeg" className="form-control" placeholder="img"
+                        <input onChange={imghandleUpload} type="file" ref={ref} accept="image/png, image/jpeg"  className="form-control" placeholder="img"
                         />
                         {file && <ImageThumb image={file} />}
                     </div>
