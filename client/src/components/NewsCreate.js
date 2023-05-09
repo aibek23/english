@@ -50,9 +50,7 @@ const NewsCreate = (props) => {
             formdata.append('image', description);
             formdata.append('image', content);
             formdata.append('image', author);
-
-
-            axios.post(`http://localhost:5000${props.path}/save`,formdata ,{   
+            axios.post(`${window.location.protocol + '//' + window.location.host+props.path}/save`,formdata ,{   
                 headers: { "Content-Type": "multipart/form-data" } 
             })
             .then(res => {

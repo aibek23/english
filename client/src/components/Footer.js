@@ -1,7 +1,8 @@
 import React from "react";
-import { FaTelegram } from "react-icons/fa"
-import {ImMail4} from "react-icons/im"
-import {SiFacebook} from "react-icons/si"
+import { RiTelegramLine } from "react-icons/ri"
+import {AiOutlineWhatsApp} from "react-icons/ai"
+import {AiOutlineMail} from "react-icons/ai"
+import {AiOutlineInstagram} from "react-icons/ai"
 import { Nav } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import faviconPng from '../img/photo.jpg'
@@ -21,9 +22,10 @@ export const Footer = () => {
     </div>
 
     <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li className="ms-3"><a className="text-muted" href="#"><FaTelegram style={{  fontSize: "35px" }} /></a></li>
-      <li className="ms-3"><a className="text-muted" href="#"><ImMail4 style={{  fontSize: "35px" }} /></a></li>
-      <li className="ms-3"><a className="text-muted" href="#"><SiFacebook style={{  fontSize: "35px" }} /></a></li>
+      {/* <li className="ms-3"><a className="text-muted" href="#"><RiTelegramLine style={{  fontSize: "35px" }} /></a></li> */}
+      <li className="ms-3"><a className="text-muted" href="mailto:technicpro@gmail.com"><AiOutlineMail style={{  fontSize: "35px" }} /></a></li>
+      <li className="ms-3"><a className="text-muted" href="https://wa.me/996500712021?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82..."><AiOutlineWhatsApp style={{  fontSize: "35px" }} /></a></li>
+      <li className="ms-3"><a className="text-muted" href="https://instagram.com/technic_pro_?igshid=NTc4MTIwNjQ2YQ=="><AiOutlineInstagram style={{  fontSize: "35px" }} /></a></li>
       {/* <li className="ms-3"><a className="text-muted" href="#"><svg className="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
       <li className="ms-3"><a className="text-muted" href="#"><svg className="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li> */}
     </ul>

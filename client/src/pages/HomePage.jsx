@@ -204,7 +204,7 @@ export const HomePage = () => {
             <div className="button-container left xs-full">
               <div className="button-wrapper"><a className="btn btn-legacy font-text css95"src="#">
                 <div className="pad-left" style={{ "width": "40px" }}></div>
-                <div className="btn-content"><span className="text">Связаться с нами</span></div>
+                <div className="btn-content"><a className="text-muted" href="https://wa.me/996500712021?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82..."><span className="text">Связаться с нами</span></a></div>
                 <div className="pad-right" style={{ "width": "40px" }}></div>
               </a></div>
             </div>
