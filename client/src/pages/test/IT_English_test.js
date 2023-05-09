@@ -1,7 +1,6 @@
-import React, { useCallback, useContext,useEffect,useState } from 'react';
+import React, {      useContext,useState } from 'react';
 import {useHttp} from '../../hooks/http.hook'
 import {Context} from '../../context/Context'
-import { Link } from 'react-router-dom';
 const questions = [
     {
         questionText: " 1) What is the SI unit for measuring force?",
@@ -229,7 +228,7 @@ const questions = [
         ],
     }
 ];
-function IT_English_test() {
+function ITEnglishtest() {
     const auth = useContext(Context)
     const {request} = useHttp()
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -319,7 +318,7 @@ return (
                         <div className="showScore-div">
                             <h3>Список ваших ответов:</h3>
                             <h4>Your score  {level}</h4>
-                            <p>Правильных ответов {score} из {questions.length}</p>
+                            <p>Правильных ответов {questions.length-score} из {questions.length}</p>
 
                             {userAnswers.map((answer, index) => (
                                 <div key={index * 15} className="shadow p-4 m-5 rounded-4 bg-white">
@@ -375,4 +374,4 @@ return (
     </div>
 );
 }
-export default IT_English_test;
+export default ITEnglishtest;

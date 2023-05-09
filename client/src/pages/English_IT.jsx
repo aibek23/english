@@ -1,6 +1,6 @@
 import React from "react";
 
-const English_IT = () => {
+const EnglishIT = () => {
     return (
         <>
             <div className="container d-flex justify-content-center mt-5">
@@ -1436,4 +1436,4 @@ const English_IT = () => {
         </>
     )
 }
-export default English_IT;
+export default EnglishIT;

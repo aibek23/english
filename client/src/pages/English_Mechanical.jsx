@@ -1,6 +1,6 @@
 import React from "react";
 
-const English_Mechanical = () => {
+const EnglishMechanical = () => {
     return (
         <>
             <div>
@@ -3003,4 +3003,4 @@ const English_Mechanical = () => {
     )
 }
 
-export default English_Mechanical;
+export default EnglishMechanical;

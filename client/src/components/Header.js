@@ -73,11 +73,17 @@ export const Header = (props) => {
                 <div className="btn-content"><span className="text">Курсы</span></div>
                 <div className="pad-right" style={{ "width": "6px" }}></div>
               </NavLink>
-              <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/grammar"}>
+              <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/news"}>
                 <div className="pad-left" style={{ "width": "6px" }}></div>
-                <div className="btn-content"><span className="text">База знаний</span></div>
+                <div className="btn-content"><span className="text">Новости</span></div>
                 <div className="pad-right" style={{ "width": "6px" }}></div>
               </NavLink>
+              {state.authenticated ? <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/video"}>
+                <div className="pad-left" style={{ "width": "6px" }}></div>
+                <div className="btn-content"><span className="text">Видео
+                </span></div>
+                <div className="pad-right" style={{ "width": "6px" }}></div>
+              </NavLink> : ""}
               <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/about"}>
                 <div className="pad-left" style={{ "width": "6px" }}></div>
                 <div className="btn-content"><span className="text">О нас

@@ -9,15 +9,21 @@ import { AdminPanel } from './pages/AdminPanel'
 import { Personal } from './pages/Personal'
 import { AboutUsPage } from './pages/AboutUsPage'
 import { CoursePage } from './pages/CoursePage'
-import English_Mechanical from './pages/English_Mechanical'
-import English_IT from './pages/English_IT'
+import { News } from './pages/News'
+import {NewsCart} from './components/NewsCart'
+
+import { Video } from './pages/Video'
+import {VideoCart} from './components/video/VideoCart'
+
+import EnglishMechanical from './pages/English_Mechanical'
+import EnglishIT from './pages/English_IT'
 
 
 import English from './pages/English'
 import Test from './pages/test/Test'
-import Level_detection from './pages/test/Level_detection'
-import English_test from './pages/test/Engilsh_test'
-import IT_English_test from './pages/test/IT_English_test'
+import Leveldetection from './pages/test/Level_detection'
+import Englishtest from './pages/test/Engilsh_test'
+import ITEnglishtest from './pages/test/IT_English_test'
 
 
 export const useRoutes = (isAuthenticated) => {
@@ -46,15 +52,21 @@ export const useRoutes = (isAuthenticated) => {
         <Route path='/AuthPage' exact element={<Personal />} />
         <Route path="/about" exact element={<AboutUsPage />} />
 
+        <Route path='/news' element={<News/>} />
+        <Route path='/news/:id' element={<NewsCart/>} />
+
+        <Route path='/video' element={<Video/>} />
+        <Route path='/video/:id' element={<VideoCart/>} />
+
         <Route path='/courses' element={<CoursePage />} />
         <Route path='/courses/english' element={<English />} />
-        <Route path='/courses/englishforit' element={<English_IT />} />
-        <Route path='/courses/englishfromechanical' element={<English_Mechanical />} />
+        <Route path='/courses/englishforit' element={<EnglishIT />} />
+        <Route path='/courses/englishfromechanical' element={<EnglishMechanical />} />
 
         <Route path='/test' element={<Test />} />
-        <Route path='/test/level' element={<Level_detection />} />
-        <Route path='/test/english' exact element={<English_test />} />
-        <Route path='/test/it_test' element={<IT_English_test />} />
+        <Route path='/test/level' element={<Leveldetection />} />
+        <Route path='/test/english' exact element={<Englishtest />} />
+        <Route path='/test/it_test' element={<ITEnglishtest />} />
       </Routes>
       <Footer />
     </>
@@ -72,9 +84,13 @@ export const useRoutes = (isAuthenticated) => {
         <Route path="/about" exact element={<AboutUsPage />} />
         <Route path='/courses' exact element={<CoursePage />} />
         <Route path='/courses/english' element={<English />} />
-        <Route path='/courses/englishforit' element={<English_IT />} />
-        <Route path='/courses/englishfromechanical' element={<English_Mechanical />} />
-        <Route path='/test/level' element={<Level_detection />} />
+        <Route path='/courses/englishforit' element={<EnglishIT />} />
+        <Route path='/courses/englishfromechanical' element={<EnglishMechanical />} />
+
+        <Route path='/news' element={<News/>} />
+        <Route path='/news/:id' element={<NewsCart/>} />
+
+        <Route path='/test/level' element={<Leveldetection />} />
       </Routes>
       < Footer />
     </>

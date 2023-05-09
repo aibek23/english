@@ -1,12 +1,14 @@
-import React, { useCallback, useContext, useEffect, useState, useRef } from "react";
+import React, { useCallback, useContext, useState, useRef ,useEffect} from "react";
 import { useHttp } from '../hooks/http.hook'
 import { Context } from '../context/Context';
 import Input from "./input/Input";
 import axios from 'axios';
+import { toast, ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 const ImageThumb = ({ image }) => {
     return <img src={URL.createObjectURL(image)} alt={image.name} />;
 };
-const NewsCreate = () => {
+const NewsCreate = (props) => {
     const [userInfo, setuserInfo] = useState({
         file:[],
         filepreview:null,
@@ -15,11 +17,12 @@ const NewsCreate = () => {
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
     const [file, setFile] = useState("");
-    const [content, setContent] = useState("")
+    const [content, setContent] = useState('')
     const auth = useContext(Context);
     const datas = JSON.parse(localStorage.getItem('userData'));
     const author = datas.username
     const ref = useRef();
+    useEffect(()=>{setContent(props.content)},[props.content])
     function imghandleUpload(event) {
         setFile(event.target.files[0]);
         setuserInfo({
@@ -30,80 +33,78 @@ const NewsCreate = () => {
     }
     const createHandler = useCallback(async () => {
         try {
-            
+            if(title===''||description===''||content===''){
+                toast.error("заполните все поля формы", {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                  });
+            }else{
             const formdata = new FormData() 
-            formdata.append('avatar', userInfo.file);
-            console.log(userInfo.file);
-            // formData.append('image', file);
-            // Add other fields to the form data
-            // formData.append('news', "edcw");
-            // formData.append('description', description);
-            // formData.append('content', content);
-            // formData.append('author', author);
+            formdata.append('image', userInfo.file );
+            formdata.append('image', title);
+            formdata.append('image', description);
+            formdata.append('image', content);
+            formdata.append('image', author);
 
-            axios.post('http://localhost:5000/api/news/save',formdata ,{   
+
+            axios.post(`http://localhost:5000${props.path}/save`,formdata ,{   
                 headers: { "Content-Type": "multipart/form-data" } 
             })
-            .then(res => { // then print response status
-                console.warn(res);
-                if(res.data.success === 1){
-                    
-                }
-    
-    
-            })
-             
-    
-         
-            
-      
-            // if (!response.ok) {
-            //   throw new Error(data.message || 'Что-то пошло не так')
-            // }
-  
-            // title && description && content && author && 
-            if (file) {
+            .then(res => {
                 
+                toast.info(`${res.data.message}`, {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                  });
 
-                // const formdata = new FormData() 
-                // formdata.append('avatar', userInfo.file);
-                // // formData.append('image', file);
-
-                // // Add other fields to the form data
-                // // formData.append('news', "edcw");
-                // // formData.append('description', description);
-                // // formData.append('content', content);
-                // // formData.append('author', author);
-                // const data = await request('/api/news/save', 'POST', formdata , {
-                //     "Content-Type": "multipart/form-data",
-                //     Authorization: `Bearer ${auth.token}`
-                // });
-                // const data = await request('/api/news/save', 'POST', {
-                //     image: file,
-                //     title: title,
-                //     description: description,
-                //     content: content,
-                //     author: author
-                // }, {
-                //     'Content-Type': 'application/json',
-                //     Authorization: `Bearer ${auth.token}`
-                // });
-                // console.log(data);
-            } else {
-                console.log(";;;;;;;;;;;;;;;;;;;;;;;;;;");
-                console.error('One or more variables are undefined.');
-                return;
+                  setTimeout(() => {
+                    props.props()
+                  }, 1000);
+            })
+            .catch(function (error) {
+                let message = error.message;
+                if(error.response.data.message){
+                    message = error.response.data.message
+                }
+                toast.error(`${message}`, {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                  });
+              })
             }
-
-
-
         } catch (e) { console.log(e); }
+ 
     }, [auth.token, request, author, content, description, file, title])
     function removeHandler() {
         setTitle(""); setDescription(""); setFile(""); ref.current.value = "";
     }
     return (
-        <>
+        <>      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
             <div className="container">
                 <div className="m-3">
                     <div className="form-group col-lg-7">
@@ -122,7 +123,7 @@ const NewsCreate = () => {
                         <Input type="text" placeholder="введите краткий описание ..." value={description} setValue={setDescription} />
                     </div>
                     <div className="form-group mt-4 col-lg-7">
-                        <Input type="text" placeholder="контент ..." value={content} setValue={setContent} />
+                        <input style={{"opacity":".2"}} type="disabled" placeholder="контент ..." value={content} disabled={"disabled"}  />
                     </div>
                     <div className="col-lg-7 mt-5">
                         <button className="btn btn-success" onClick={() => createHandler()} style={{ marginRight: "20px" }}>Создать</button>
@@ -134,15 +135,3 @@ const NewsCreate = () => {
     )
 }
 export default NewsCreate
-
-// function makeid(length) {
-//     let result = '';
-//     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-//     const charactersLength = characters.length;
-//     let counter = 0;
-//     while (counter < length) {
-//       result += characters.charAt(Math.floor(Math.random() * charactersLength));
-//       counter += 1;
-//     }
-//     return result;
-// }
