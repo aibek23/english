@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2457814c.css",
+    "main.js": "/static/js/main.7fbf7538.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/skyscraper.jpg": "/static/media/skyscraper.ea6c99d0661dc1497d07.jpg",
+    "static/media/0326.png": "/static/media/0326.6215679fe6bb4deb693d.png",
+    "static/media/190303.png": "/static/media/190303.7ff00140f627e368fcdc.png",
+    "static/media/205413.png": "/static/media/205413.d5fe723c57cf96d6ac50.png",
+    "static/media/150649.png": "/static/media/150649.77c05915c5fa371db338.png",
+    "static/media/main-fonts.svg?v=20": "/static/media/main-fonts.404be73e1ad40b1da282.svg",
+    "static/media/Mechanical.png": "/static/media/Mechanical.69e9d830dca4d80f62c8.png",
+    "static/media/134722.png": "/static/media/134722.e1327d0935d1d9b0d109.png",
+    "static/media/ITEnglish.png": "/static/media/ITEnglish.0e8e9541f4abb5d91628.png",
+    "static/media/loading.gif": "/static/media/loading.f1283d507ab1f8167913.gif",
+    "static/media/42.png": "/static/media/42.4c42840113d323bdd390.png",
+    "static/media/English.png": "/static/media/English.08fb4cfae133a61102ad.png",
+    "static/media/4433.png": "/static/media/4433.7c974f4ea8608a95059d.png",
+    "static/media/minus.png": "/static/media/minus.583ed3cc773ab07981d6.png",
+    "static/media/main-fonts.eot?v=20": "/static/media/main-fonts.b8dc46886b7e216a02be.eot",
+    "static/media/main-fonts.ttf?v=20": "/static/media/main-fonts.4d0a76596dbbbfbfe5ee.ttf",
+    "static/media/main-fonts.woff?v=20": "/static/media/main-fonts.dbf9ed7d53cfa8f73da7.woff",
+    "index.html": "/index.html",
+    "static/media/icon-check.svg": "/static/media/icon-check.2a82d3ac834a0d077676.svg",
+    "main.2457814c.css.map": "/static/css/main.2457814c.css.map",
+    "main.7fbf7538.js.map": "/static/js/main.7fbf7538.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2457814c.css",
+    "static/js/main.7fbf7538.js"
+  ]
+}
