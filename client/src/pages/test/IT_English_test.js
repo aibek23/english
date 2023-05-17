@@ -3,230 +3,231 @@ import {useHttp} from '../../hooks/http.hook'
 import {Context} from '../../context/Context'
 const questions = [
     {
-        questionText: " 1) What is the SI unit for measuring force?",
-        answerOptions: [
-            { answerText: " Joule ", isCorrect: false },
-            { answerText: " Newton ", isCorrect: true },
-            { answerText: " Watt ", isCorrect: false },
-            { answerText: " Hertz ", isCorrect: false },
-        ],
-    },
-    {
-        questionText: " 2) What is the process of converting a solid directly into a gas called?",
-        answerOptions: [
-            { answerText: " Melting", isCorrect: false },
-            { answerText: " Evaporation", isCorrect: false },
-            { answerText: " Sublimation ", isCorrect: true },
-            { answerText: " Condensation ", isCorrect: false },
-        ],
-    },
-    {
-        questionText: " 3) What is the name of the device used to measure the pressure of a gas or liquid?",
-        answerOptions: [
-            { answerText: " Barometer ", isCorrect: false },
-            { answerText: " Thermometer ", isCorrect: false },
-            { answerText: " Manometer ", isCorrect: true },
-            { answerText: " Spectrometer ", isCorrect: false },
-        ],
-    },
-    {
-        questionText: " 4) Which of the following materials is the best conductor of electricity? ",
-        answerOptions: [
-            { answerText: " Rubber ", isCorrect: false },
-            { answerText: " Glass ", isCorrect: false },
-            { answerText: " Copper ", isCorrect: true },
-            { answerText: " Wood ", isCorrect: false },
-        ],
-    },
-    {
-        questionText: " 5) What is the formula for calculating the area of a circle?",
-        answerOptions: [
-            { answerText: " A = lw", isCorrect: false },
-            { answerText: " A = πr²", isCorrect: true },
-            { answerText: " A = bh ", isCorrect: false },
-            { answerText: " A = (b1 + b2)h/2", isCorrect: false },
-        ],
-    },
-    {
-        questionText: " 6) What type of energy is stored in a battery?",
-        answerOptions: [
-            { answerText: " Kinetic energy ", isCorrect: false },
-            { answerText: " Thermal energy ", isCorrect: false },
-            { answerText: " Potential energy ", isCorrect: false },
-            { answerText: " Chemical energy ", isCorrect: true },
-        ],
-    },
-    {
-        questionText: " 7) What is the process of using a computer to simulate and analyze a physical or mathematical system called?",
-        answerOptions: [
-            { answerText: " Modelling ", isCorrect: true },
-            { answerText: " Designing ", isCorrect: false },
-            { answerText: " Programming ", isCorrect: false },
-            { answerText: " Debugging ", isCorrect: false },
-        ],
-    },
-    {
-        questionText: " 8) Which of the following is not a type of renewable energy?",
-        answerOptions: [
-            { answerText: " Solar energy ", isCorrect: false },
-            { answerText: " Wind energy ", isCorrect: false },
-            { answerText: " Nuclear energy ", isCorrect: true },
-            { answerText: " Hydroelectric energy", isCorrect: false },
-        ],
-    },
-    {
-        questionText: " 9) Which of the following is not a type of bridge?",
-        answerOptions: [
-            { answerText: " Arch bridge ", isCorrect: false },
-            { answerText: " Suspension bridge ", isCorrect: false },
-            { answerText: " Cantilever bridge ", isCorrect: false },
-            { answerText: " Roundabout bridge ", isCorrect: true },
-        ],
-    },
-    {
-        questionText: "  10) What is the process of removing impurities from a liquid called?",
-        answerOptions: [
-            { answerText: " Distillation ", isCorrect: false },
-            { answerText: " Filtration ", isCorrect: true },
-            { answerText: " Condensation ", isCorrect: false },
-            { answerText: " Sublimation ", isCorrect: false },
-        ],
-    },
-    {
-        questionText: " 11) What type of material is a thermistor made of?",
-        answerOptions: [
-            { answerText: " Glass ", isCorrect: false },
-            { answerText: " Plastic ", isCorrect: false },
-            { answerText: " Metal ", isCorrect: false },
-            { answerText: " Ceramic ", isCorrect: true },
-        ],
-    },
-    {
-        questionText: "12) What is the process of combining two or more atoms to form a more complex atom called? ",
-        answerOptions: [
-            { answerText: " Fission", isCorrect: false },
-            { answerText: " Fusion ", isCorrect: true },
-            { answerText: " Electrification ", isCorrect: false },
-            { answerText: " Ionization ", isCorrect: false },
-        ],
-    },
-    {
-        questionText: " 13) Which type of motor is used to power electric cars? ",
-        answerOptions: [
-            { answerText: " AC motor ", isCorrect: true },
-            { answerText: " DC motor", isCorrect: false },
-            { answerText: " Stepper motor ", isCorrect: false },
-            { answerText: " Linear motor ", isCorrect: false },
-        ],
-    },
-    {
-        questionText: " 14) What is the process of converting mechanical energy into electrical energy called?",
-        answerOptions: [
-            { answerText: " Induction ", isCorrect: false },
-            { answerText: " Conversion ", isCorrect: false },
-            { answerText: " Transformation ", isCorrect: false },
-            { answerText: " Generation ", isCorrect: true },
-        ],
-    },
-    {
-        questionText: " 15) Which of the following is a measure of the resistance of a material to the flow of electric current?",
-        answerOptions: [
-            { answerText: " Voltage ", isCorrect: false },
-            { answerText: " Current ", isCorrect: false },
-            { answerText: " Resistance ", isCorrect: true },
-            { answerText: " Impedance ", isCorrect: false },
-        ],
-    },
-    {
-        questionText: "16) What is the SI unit for measuring frequency ? ",
-        answerOptions: [
-            { answerText: " Hertz ", isCorrect: false },
-            { answerText: " Joule Joule ", isCorrect: false },
-            { answerText: " Watt ", isCorrect: true },
-            { answerText: " Newton ", isCorrect: false },
-        ],
-    },
-    {
-        questionText: " 17) What is the process of cutting a solid material using a high-pressure stream of water called?",
-        answerOptions: [
-            { answerText: " a) Watercutting", isCorrect: false },
-            { answerText: " Waterjet cutting", isCorrect: true },
-            { answerText: "  Water erosion ", isCorrect: false },
-            { answerText: " Hydrocutting ", isCorrect: false },
-        ],
-    },
-    {
-        questionText: " 18) Which type of welding uses a gas flame to heat and melt the metal?",
-        answerOptions: [
-            { answerText: " MIG welding", isCorrect: false },
-            { answerText: " TIG welding ", isCorrect: false },
-            { answerText: " Stick welding ", isCorrect: false },
-            { answerText: " Oxyfuel welding ", isCorrect: true },
-        ],
-    },
-    {
-        questionText: " 19) What is the process of creating a three-dimensional object from a digital model called?",
-        answerOptions: [
-            { answerText: " Printing ", isCorrect: false },
-            { answerText: " Casting ", isCorrect: false },
-            { answerText: " Molding ", isCorrect: false },
-            { answerText: " Additive manufacturing ", isCorrect: true },
-        ],
-    },
-    {
-        questionText: " 20) What is the unit of measurement for power?",
-        answerOptions: [
-            { answerText: " Watt ", isCorrect: true },
-            { answerText: " Joule ", isCorrect: false },
-            { answerText: " Newton ", isCorrect: false },
-            { answerText: " Ampere ", isCorrect: false },
-        ],
-    },
-    {
-        questionText: " 21) What is the process of transforming a liquid into a solid called?",
-        answerOptions: [
-            { answerText: " Solidification ", isCorrect: true },
-            { answerText: " Condensation ", isCorrect: false },
-            { answerText: " Sublimation ", isCorrect: false },
-            { answerText: " Melting ", isCorrect: false },
-        ],
-    },
-    {
-        questionText: " 22) Which type of lens causes parallel rays of light to converge at a focal point?",
-        answerOptions: [
-            { answerText: " Convex lens ", isCorrect: true },
-            { answerText: " ) Concave lens ", isCorrect: false },
-            { answerText: " Prism ", isCorrect: false },
-            { answerText: " Mirror ", isCorrect: false },
-        ],
-    },
-    {
-        questionText: "23) Which of the following is not a type of bearing?",
-        answerOptions: [
-            { answerText: " Roller bearing ", isCorrect: false },
-            { answerText: " Ball bearing ", isCorrect: false },
-            { answerText: " Fluid bearing ", isCorrect: false },
-            { answerText: " Gear bearing ", isCorrect: true },
-        ],
-    },
-    {
-        questionText: "24) What is the process of using a computer to control the operations of a machine or system called?",
-        answerOptions: [
-            { answerText: " Automation ", isCorrect: true },
-            { answerText: " Robotics ", isCorrect: false },
-            { answerText: " Mechanization ", isCorrect: false },
-            { answerText: " Cybernetics ", isCorrect: false },
-        ],
-    },
-    {
-        questionText: " 25) Which of the following is the branch of physics that deals with the behavior of light?",
-        answerOptions: [
-            { answerText: " Thermodynamics ", isCorrect: false },
-            { answerText: " Electromagnetism ", isCorrect: false },
-            { answerText: " Optics ", isCorrect: true },
-            { answerText: " Quantum mechanics ", isCorrect: false },
-        ],
-    }
+        questionText: " 1) What does 'CPU' stand for??",
+       answerOptions: [
+       { answerText: " Central Programming Unit ", isCorrect: false },
+       { answerText: " Newton ", isCorrect: true },
+       { answerText: " Watt ", isCorrect: false },
+       { answerText: " Hertz ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: " 2) What is the maximum data transfer rate for USB 3.0?",
+       answerOptions: [
+       { answerText: " 480 Mbps ", isCorrect: false },
+       { answerText: " 5 Gbps ", isCorrect: true },
+       { answerText: " 10 Gbps ", isCorrect: false  },
+       { answerText: " 20 Gbps ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: " 3) What type of cable is used to connect a computer to a router?",
+       answerOptions: [
+       { answerText: " . Ethernet cable", isCorrect: true },
+       { answerText: " Coaxial cable ", isCorrect: false },
+       { answerText: " Fiber optic cable", isCorrect: false },
+       { answerText: " USB cable ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: " 4) What is the smallest unit of digital information? ",
+       answerOptions: [
+       { answerText: " Megabyte ", isCorrect: false },
+       { answerText: " Byte ", isCorrect: true },
+       { answerText: " Gigabyte ", isCorrect: false },
+       { answerText: " Terabyte ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: " 5) What does RAID stand for?",
+       answerOptions: [
+       { answerText: " Redundant Array of Inexpensive Disks", isCorrect: false },
+       { answerText: " Redundant Array of Independent Disks", isCorrect: true },
+       { answerText: " Reliable Array of Inexpensive Disks ", isCorrect: false },
+       { answerText: " Reliable Array of Independent Disks", isCorrect: false },
+       ],
+       },
+       {
+       questionText: " 6) What type of connector is used to connect a monitor to a computer?",
+       answerOptions: [
+       { answerText: " VGA ", isCorrect: true },
+       { answerText: " HDMI ", isCorrect: false },
+       { answerText: " USB ", isCorrect: false },
+       { answerText: " Ethernet", isCorrect: false },
+       ],
+       },
+       {
+       questionText: "7) What is the maximum resolution for HDMI 2.0?",
+       answerOptions: [
+       { answerText: " 1080p", isCorrect: false },
+       { answerText: " 1440p ", isCorrect: false },
+       { answerText: " 4K ", isCorrect: true },
+       { answerText: " 8K ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: "8) What is the purpose of a router in a computer network?",
+       answerOptions: [
+       { answerText: " To connect devices to the internet ", isCorrect: true },
+       { answerText: " To connect devices to each other ", isCorrect: false },
+       { answerText: " To transfer data between networks", isCorrect: false },
+       { answerText: " To encrypt data transmissions ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: " 9) What is the difference between RAM and ROM?",
+       answerOptions: [
+       { answerText: " RAM is volatile, while ROM is non-volatile ", isCorrect: true},
+       { answerText: " RAM is non-volatile, while ROM is volatile ", isCorrect: false },
+       { answerText: " RAM is faster than ROM ", isCorrect: false },
+       { answerText: " ROM is faster than RAM", isCorrect: false },
+       ],
+       },
+       {
+       questionText: "  10) What type of storage is an SSD?",
+       answerOptions: [
+       { answerText: " Optical storage", isCorrect: false },
+       { answerText: " Magnetic storage", isCorrect: false },
+       { answerText: " Solid-state storage ", isCorrect: true },
+       { answerText: " Flash storage ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: "  11) What does DNS stand for? ",
+       answerOptions: [
+       { answerText: " Dynamic Network System", isCorrect: false },
+       { answerText: " Domain Name System ", isCorrect: true },
+       { answerText: " Data Network Service ", isCorrect: false },
+       { answerText: " Digital Network Solution ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: "12) What is a firewall?",
+       answerOptions: [
+       { answerText: " A device that prevents unauthorized access to a network ", isCorrect: true },
+       { answerText: " A device that amplifies wireless signals", isCorrect: false },
+       { answerText: " A device that connects networks together ", isCorrect: false },
+       { answerText: " A device that filters spam emails ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: "13) What is the difference between a hub and a switch? ",
+       answerOptions: [
+       { answerText: " A hub broadcasts data to all connected devices, while a switch directs data only to the intended recipient ", isCorrect: true },
+       { answerText: " . A switch broadcasts data to all connected devices, while a hub directs data only to the intended recipient", isCorrect: false },
+       { answerText: " A hub and a switch are the same thing  ", isCorrect: false },
+       { answerText: " A hub is used for wired networks, while a switch is used for wireless networks ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: " 14) What is a codec?",
+       answerOptions: [
+       { answerText: " A device that converts analog signals to digital signals", isCorrect: false },
+       { answerText: " A device that compresses and decompresses digital audio and video signals", isCorrect: true },
+       { answerText: " A device that encrypts and decrypts data transmissions ", isCorrect: false },
+       { answerText: " A device that amplifies and filters digital signals ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: "15) What is the function of an operating system? ",
+       answerOptions: [
+       { answerText: " To manage the computer's hardware and software resources ", isCorrect: true },
+       { answerText: " To provide internet connectivity to the computer ", isCorrect: false },
+       { answerText: " To protect the computer from viruses and malware ", isCorrect: false },
+       { answerText: " To display graphics and multimedia content ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: "16) What is a GUI?",
+       answerOptions: [
+       { answerText: " A computer programming language ", isCorrect: false },
+       { answerText: " A device driver", isCorrect: false },
+       { answerText: " A graphical user interface ", isCorrect: true },
+       { answerText: " A file extension", isCorrect: false },
+       ],
+       },
+       {
+       questionText: " 17) What is a VPN?",
+       answerOptions: [
+       { answerText: " A virtual private network that allows users to securely access a private network over the internet ", isCorrect: true },
+       { answerText: "A video processing network used for live streaming", isCorrect: false },
+       { answerText: "  A virus protection network that scans for malware ", isCorrect: false },
+       { answerText: " A virtual power network that optimizes energy usage ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: " 18) What is the purpose of a BIOS?",
+       answerOptions: [
+       { answerText: " To control the computer's hardware at a low level ", isCorrect: true },
+       { answerText: " To provide virus protection to the computer ", isCorrect: false },
+       { answerText: " To manage the computer's network connections ", isCorrect: false },
+       { answerText: " To encrypt data transmissions between the computer and the internet ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: " 19) What is the difference between a bit and a byte?",
+       answerOptions: [
+       { answerText: " A bit is 8 times smaller than a byte ", isCorrect: false },
+       { answerText: " A bit is 8 times larger than a byte", isCorrect: false },
+       { answerText: " A bit is a unit of data storage, while a byte is a unit of digital information ", isCorrect: true },
+       { answerText: " A bit is used for analog signals, while a byte is used for digital signals ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: "20) What is the difference between HTTP and HTTPS?",
+       answerOptions: [
+       { answerText: " . HTTPS is a more secure version of HTTP that uses encryption to protect data transmissions ", isCorrect: true },
+       { answerText: " HTTP is a more secure version of HTTPS that uses encryption to protect data transmissions ", isCorrect: false },
+       { answerText: " HTTP is used for audio and video streaming, while HTTPS is used for web browsing ", isCorrect: false },
+       { answerText: " HTTPS is faster than HTTP because it uses a dedicated network connection ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: "21) What is a subnet mask? ",
+       answerOptions: [
+       { answerText: " A 32-bit number that defines the network and host portions of an IP address", isCorrect: true },
+       { answerText: " A device that measures network bandwidth usage ", isCorrect: false },
+       { answerText: " A protocol used to transfer data between networks ", isCorrect: false },
+       { answerText: " A method for encrypting data transmissions over a network ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: " 22) What is a DNS server? ",
+       answerOptions: [
+       { answerText: " A server that translates domain names into IP addresses ", isCorrect: true },
+       { answerText: " A server that provides internet connectivity to devices ", isCorrect: false },
+       { answerText: " A server that filters spam emails ", isCorrect: false },
+       { answerText: " A server that stores data backups ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: " 23) What is a cookie?",
+       answerOptions: [
+       { answerText: " A small file stored on a user's computer by a website to remember user preferences and activity ", isCorrect: true },
+       { answerText: " A device used to connect a computer to a network ", isCorrect: false },
+       { answerText: " A type of computer virus ", isCorrect: false },
+       { answerText: " A program used to scan for malware ", isCorrect: false },
+       ],
+       },
+       {
+       questionText: "24) What is a USB flash drive? ",
+       answerOptions: [
+       { answerText: " A portable storage device that uses flash memory to store data ", isCorrect: true },
+       { answerText: " A device used to connect a computer to a printer ", isCorrect: false },
+       { answerText: " A device used to connect a computer to the internet ", isCorrect: false },
+       { answerText: " A device used to scan documents and photos", isCorrect: false },
+       ],
+       },
+       {
+       questionText: " 25) What is a motherboard? ",
+       answerOptions: [
+       { answerText: " The main circuit board of a computer that connects all the components together ", isCorrect: true },
+       { answerText: " A device that amplifies and filters audio signals ", isCorrect: false },
+       { answerText: " A device that controls the computer's power supply ", isCorrect: false },
+       { answerText: " A device that stores and retrieves data from a hard drive ", isCorrect: false },
+       ],
+       },
+
 ];
 function ITEnglishtest() {
     const auth = useContext(Context)
