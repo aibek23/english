@@ -32,7 +32,7 @@ export const Header = (props) => {
   
 
     <div className='container' >
-      <Navbar variant="dark" expand="lg" sticky="top" style={{ "backgroundColor": "#636175FF" }}>
+      <Navbar variant="dark" expand="lg" sticky="top" style={{ "backgroundColor": "#636175FF" ,"color":"white"}}>
         <div className='container'>
           <Navbar.Brand href="/"><div className="grid valign-middle paddings-20px">
             <div className="d-flex align-items-center">
@@ -53,47 +53,47 @@ export const Header = (props) => {
           </div></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-          <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+          <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end" style={{"color":"white"}}>
             <Nav >
               {state.adm ? <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/admin"}>
                 <div className="pad-left" style={{ "width": "6px" }}></div>
-                <div className="btn-content"><span className="text">Админ панель
+                <div className="btn-content"><span className="text"  style={{"color":"white"}}>Админ панель
                 </span></div>
                 <div className="pad-right" style={{ "width": "6px" }}></div>
               </NavLink> : ""}
 
               <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/"}>
                 <div className="pad-left" style={{ "width": "6px" }}></div>
-                <div className="btn-content"><span className="text">Для кого
+                <div className="btn-content"><span className="text"  style={{"color":"white"}}>Для кого
                 </span></div>
                 <div className="pad-right" style={{ "width": "6px" }}></div>
               </NavLink>
               <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/courses"}>
                 <div className="pad-left" style={{ "width": "6px" }}></div>
-                <div className="btn-content"><span className="text">Курсы</span></div>
+                <div className="btn-content"><span className="text"  style={{"color":"white"}}>Курсы</span></div>
                 <div className="pad-right" style={{ "width": "6px" }}></div>
               </NavLink>
               <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/news"}>
                 <div className="pad-left" style={{ "width": "6px" }}></div>
-                <div className="btn-content"><span className="text">Новости</span></div>
+                <div className="btn-content"><span className="text"  style={{"color":"white"}}>Новости</span></div>
                 <div className="pad-right" style={{ "width": "6px" }}></div>
               </NavLink>
               {state.authenticated ? <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/video"}>
                 <div className="pad-left" style={{ "width": "6px" }}></div>
-                <div className="btn-content"><span className="text">Видео
+                <div className="btn-content"><span className="text"  style={{"color":"white"}}>Видео
                 </span></div>
                 <div className="pad-right" style={{ "width": "6px" }}></div>
               </NavLink> : ""}
               <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/about"}>
                 <div className="pad-left" style={{ "width": "6px" }}></div>
-                <div className="btn-content"><span className="text">О нас
+                <div className="btn-content"><span className="text"  style={{"color":"white"}}>О нас
 
                 </span></div>
                 <div className="pad-right" style={{ "width": "6px" }}></div>
               </NavLink>
               {state.authenticated ? <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/test"}>
                 <div className="pad-left" style={{ "width": "6px" }}></div>
-                <div className="btn-content"><span className="text">Тесты
+                <div className="btn-content"><span className="text"  style={{"color":"white"}}>Тесты
                 </span></div>
                 <div className="pad-right" style={{ "width": "6px" }}></div>
               </NavLink> : ""}

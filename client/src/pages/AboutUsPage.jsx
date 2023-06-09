@@ -1,8 +1,11 @@
 import React from "react";
-
+import { YMaps, Map ,ZoomControl,Placemark} from '@pbe/react-yandex-maps';
 export const AboutUsPage =()=>{
-    return(<>
-    <div className="container d-flex justify-content-center ">
+    return(<div style={{"backgroundImage":"url('https://cdn.dribbble.com/users/3132182/screenshots/9163776/xmas-and-winter_4x.png')"}}>
+        <div style={{"backgroundColor":"rgba(250, 250, 250, 0.3)"}}>
+            
+
+    <div className="container d-flex justify-content-center " style={{"color":"white" ,"paddingBottom":"100px"} }>
 <div className="mt-5 col-lg-8 ">
        <p> Добро пожаловать на наш сайт курсов технического английского языка! Мы рады представить вам нашу компанию и рассказать немного о нас.
         </p>
@@ -19,8 +22,9 @@ export const AboutUsPage =()=>{
 Мы понимаем, что знание технического английского языка может стать ключевым фактором успеха в карьере в технической сфере, поэтому мы стремимся обеспечить своих студентов необходимыми навыками и знаниями для достижения успеха в своей работе.
 </p>
 <p className="mt-5 text-end">Наш адрес: ул. Ахунбаева 127/1 пересекает Малдыбаева, Бизнес-центр “Магнум”, цокольный этаж  </p>
-
-<p className="mt-5 text-end">
+<YMaps>
+<div className="mt-5 d-flex" style={{"justifyContent": "space-between"}} >
+<Map  defaultState={{ center: [42.843475, 74.598239], zoom:  16}} ><ZoomControl options={{ float: "right" }} /><Placemark geometry={[42.843475, 74.598239]} /></Map><p className="mt-5 text-end">
 
 График работы <br/>
 Пн – Пт с 9:00 до 20:00 <br/>
@@ -30,10 +34,23 @@ export const AboutUsPage =()=>{
 +996500712021
 </p>
 
+</div>
+</YMaps>
+{/* <p className="mt-5 text-end">
+
+График работы <br/>
+Пн – Пт с 9:00 до 20:00 <br/>
+Сб – Вс Выходной <br/>
+
+Наши контакты: 
++996500712021
+</p> */}
+
 
 
 </div>
 </div>
-</>
+</div>
+</div>
     )
 }
