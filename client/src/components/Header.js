@@ -1,6 +1,6 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React, {  useState, useEffect } from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import faviconPng from '../img/photo.jpg'
 export const Header = (props) => {
@@ -66,6 +66,11 @@ export const Header = (props) => {
                 <div className="pad-left" style={{ "width": "6px" }}></div>
                 <div className="btn-content"><span className="text"  style={{"color":"white"}}>Для кого
                 </span></div>
+                <div className="pad-right" style={{ "width": "6px" }}></div>
+              </NavLink>
+              <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/price"}>
+                <div className="pad-left" style={{ "width": "6px" }}></div>
+                <div className="btn-content"><span className="text"  style={{"color":"white"}}>Цены</span></div>
                 <div className="pad-right" style={{ "width": "6px" }}></div>
               </NavLink>
               <NavLink className=" nav-link btn btn-legacy font-text css10" to={"/courses"}>

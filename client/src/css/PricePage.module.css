@@ -1,0 +1,29 @@
+/* .PricePage .title h1{
+    background-color: rgb(253, 253, 253);
+} */
+.PricePage{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-attachment: fixed;
+    background-image: url("../img/1674.jpg");
+}
+
+.Pricetable, th, td {
+    border: 1px solid rgb(20, 7, 7)!important;
+    /* border-collapse: collapse; */
+    padding: 15px 25px;
+    font-size: larger;
+}
+.Pricetable, th{
+    color: #666666;
+
+}
+.Pricetable, td{
+
+    color: blue;
+
+}
+.Pricetable{
+  background-color: rgb(253, 253, 253);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.516);
+}

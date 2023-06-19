@@ -25,6 +25,8 @@ import Leveldetection from './pages/test/Level_detection'
 import Englishtest from './pages/test/Engilsh_test'
 import ITEnglishtest from './pages/test/IT_English_test'
 
+import PricePage from './pages/PricePage'
+
 
 export const useRoutes = (isAuthenticated) => {
   const [admin, setAdmin] = useState(null);
@@ -51,6 +53,7 @@ export const useRoutes = (isAuthenticated) => {
         <Route path="/" element={<HomePage />} />
         <Route path='/AuthPage' exact element={<Personal />} />
         <Route path="/about" exact element={<AboutUsPage />} />
+        <Route path="/price" exact element={<PricePage/>} />
 
         <Route path='/news' element={<News/>} />
         <Route path='/news/:id' element={<NewsCart/>} />
@@ -67,6 +70,7 @@ export const useRoutes = (isAuthenticated) => {
         <Route path='/test/level' element={<Leveldetection />} />
         <Route path='/test/english' exact element={<Englishtest />} />
         <Route path='/test/it_test' element={<ITEnglishtest />} />
+
       </Routes>
       <Footer />
     </>
@@ -86,7 +90,7 @@ export const useRoutes = (isAuthenticated) => {
         <Route path='/courses/english' element={<English />} />
         <Route path='/courses/englishforit' element={<EnglishIT />} />
         <Route path='/courses/englishfromechanical' element={<EnglishMechanical />} />
-
+        <Route path="/price" exact element={<PricePage/>} />
         <Route path='/news' element={<News/>} />
         <Route path='/news/:id' element={<NewsCart/>} />
 
